@@ -1,0 +1,389 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html * {
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  font-family: sans-serif;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  border: none;
+}
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ol,
+ul,
+dl {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+img {
+  border: none;
+}
+em {
+  font-style: normal;
+}
+.clr {
+  zoom: 1;
+}
+.clr:after {
+  content: ".";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.fl {
+  float: left;
+  _display: inline;
+}
+.fr {
+  float: right;
+  _display: inline;
+}
+.va-t {
+  vertical-align: top;
+}
+.va-m {
+  vertical-align: middle;
+}
+.va-b {
+  vertical-align: bottom;
+}
+.i-hide {
+  display: none;
+}
+.i-show {
+  display: block;
+}
+.lineBlock {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.lbBox {
+  font-size: 0 !important;
+  *word-spacing: -1px !important;
+}
+.emptys {
+  margin-left: -1px;
+  width: 1px;
+  height: 100%;
+  font-size: 0;
+  vertical-align: middle;
+}
+label,
+dd,
+dd,
+dt {
+  font-weight: normal;
+}
+.boxsiz {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  min-width: 1180px;
+}
+.page-width {
+  width: 80%;
+  margin: 0 auto;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.mb36 {
+  margin-bottom: 36px;
+}
+.mb70 {
+  margin-bottom: 70px;
+}
+.pt45 {
+  padding-top: 45px;
+}
+.icn {
+  background-image: url("../../images/icon.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.h-head {
+  height: 76px;
+}
+.h-head .logo-box {
+  height: 76px;
+}
+.h-head .logo-box .logo-h2 .logo img {
+  width: 250px;
+  height: 57px;
+  background: #0A55EB;
+}
+.h-head .nav {
+  height: 76px;
+  white-space: nowrap;
+}
+.h-head .nav a {
+  vertical-align: middle;
+}
+.h-head .nav .link {
+  padding: 0 16px;
+  font-size: 16px;
+  color: #333333;
+  border-right: 1px solid #D7DDE9;
+}
+.h-head .nav .link.bor {
+  border-right: none;
+}
+.h-head .nav .btn {
+  margin-left: 44px;
+  width: 109px;
+  height: 35px;
+  line-height: 35px;
+  background: #FFFFFF;
+  border: 1px solid #D7DDE9;
+  font-size: 16px;
+  color: #333333;
+  text-align: center;
+}
+.h-section {
+  height: calc(100% - 364px);
+  background: linear-gradient(180deg, #0089DF 0%, #0A55EB 100%);
+  text-align: center;
+}
+.h-section .title {
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.h-section .h-search {
+  margin-top: 57px;
+  text-align: center;
+  white-space: nowrap;
+}
+.h-section .h-search .choice {
+  width: 150px;
+  height: 50px;
+  background: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+}
+.h-section .h-search .choice span {
+  font-size: 14px;
+  color: #999999;
+  vertical-align: middle;
+}
+.h-section .h-search .choice .arrow {
+  background-position: -80px -10px;
+  width: 12px;
+  height: 9px;
+  margin-left: 10px;
+}
+.h-section .h-search .h-search-box {
+  position: relative;
+  margin-left: 2px;
+}
+.h-section .h-search .h-search-box .inp {
+  width: 583px;
+  height: 50px;
+  background: #FFFFFF;
+  font-size: 14px;
+  padding-left: 22px;
+}
+.h-section .h-search .h-search-box .inp::-webkit-input-placeholder {
+  color: #999999;
+}
+.h-section .h-search .h-search-box .inp-button {
+  width: 146px;
+  height: 50px;
+  background: #00AF63;
+  line-height: 50px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+.h-section .h-search .h-search-box .txt {
+  position: absolute;
+  bottom: -28px;
+  left: 0px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.h-footer {
+  position: relative;
+  width: 100%;
+  height: 288px;
+  background: #283541;
+}
+.h-footer .page-width {
+  position: relative;
+}
+.h-footer .link dt {
+  float: left;
+  width: 84px;
+  padding-left: 7px;
+  font-size: 14px;
+  color: #ffffff;
+  border-left: 1px dashed #0088DD;
+  margin-right: 35px;
+}
+.h-footer .link dd {
+  float: left;
+  margin-right: 3%;
+}
+.h-footer .link dd a {
+  font-size: 12px;
+  color: #999999;
+}
+.h-footer .h-icon .ico-1 {
+  background-position: -57px -4px;
+  width: 15px;
+  height: 15px;
+}
+.h-footer .h-icon .ico-2 {
+  background-position: -57px -4px;
+  width: 15px;
+  height: 15px;
+}
+.h-footer .h-icon .ico-3 {
+  background-position: -4px -2px;
+  width: 13px;
+  height: 16px;
+}
+.h-footer .h-icon span {
+  font-size: 12px;
+  color: #999999;
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+.h-footer .official-account {
+  position: absolute;
+  right: 0;
+  top: 45px;
+}
+.h-footer .official-account li {
+  float: left;
+}
+.h-footer .official-account li:first-child {
+  margin-right: 79px;
+}
+.h-footer .official-account li .pic {
+  width: 70px;
+  height: 70px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+.h-footer .official-account li .pic img {
+  width: 70px;
+  height: 70px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+.h-footer .official-account li .t1 {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.h-footer .official-account li .t2 {
+  font-size: 14px;
+  color: #999999;
+}
+.h-footer .txt {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #666666;
+}
+/*# sourceMappingURL=index.css.map */
