@@ -41,29 +41,38 @@
     },
     handleBind: function (opt) {
       
-      //scrollTop
-      $(window).on('scroll', function () {
-        var height = $(window).scrollTop();
-        
-        if (height > 100) {
-          $(".sldie-bar").fadeIn();
+      
+      $(document).on('click', '.login-layer .tab li', function () {
+        var index = $(this).index();
+        $(this).addClass('curr').siblings('li').removeClass('curr');
+        $('.login-layer .show-box').eq(index).show().siblings('.show-box').hide();
+      });
+      
+      $(document).on('click', '.link2', function () {
+        $(".register-layer").show();
+        $(".login-layer").hide();
+      });
+      
+      $(document).on('click', '.link1', function () {
+        $(".findpwd-layer").show();
+        $(".login-layer").hide();
+      });
+      
+      $(document).on('click', '.choice', function () {
+        if ($(this).hasClass('choice-curr')) {
+          $(this).removeClass('choice-curr');
         } else {
-          $(".sldie-bar").fadeOut();
+          $(this).addClass('choice-curr');
         }
+        $(".choice .h-search-area").toggle();
       });
-      
-      
-      //backtop
-      $("#backtop").on('click', function () {
-        $('body,html').animate({
-          scrollTop: 0
-        }, 500);
+  
+  
+      $(document).on('focus', '#lately', function () {
+        $('.lately').show();
       });
-      
-      
-      $(document).on('click', '.website-tip .iconfont', function () {
-        $(".website-tip").hide();
-      });
+  
+    
       
       return this;
     },
@@ -161,25 +170,6 @@
       });
     },
     /**
-     *
-     * @param obj
-     */
-    filter: function (obj, arr, reset) {
-      $(obj).each(function (index, element) {
-        if (reset) {
-          $(element).removeClass('disabled');
-        } else {
-          if (arr.length > 0) {
-            for (var i = 0; i < arr.length; i++) {
-              if ($(element).attr('data-value') == arr[i]) {
-                $(element).addClass('disabled');
-              }
-            }
-          }
-        }
-      });
-    },
-    /**
      *时分秒倒计时方法
      */
     timergo: function (time) {
@@ -211,19 +201,6 @@
         $("#timer_m").text(0 + '分');
         $("#timer_s").text(0 + '秒');
       }
-    },
-    /**
-     * 星星评分
-     */
-    star: function (obj, callback) {
-      $(obj).on('click', function () {
-        var index = $(this).index();
-        
-        $("" + obj + ":lt(" + index + 1 + ")").removeClass("default");
-        $("" + obj + ":gt(" + index + ")").addClass("default");
-        
-        typeof callback == 'function' && callback(index + 1);
-      });
     },
     imgZoom: function (imgObj, cut) {
       imgObj.each(function () {
