@@ -145,7 +145,7 @@
       
       //搜索提交
       $(document).on('focus', '#searchBtn', function () {
-        window.location.href = '/search.html'
+        window.location.href = '/tradepage/search.html'
       });
       
       
