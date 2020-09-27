@@ -13,62 +13,10 @@ html, body {
   overflow: hidden;
 }
 
-.h-head {
-  height: 76px;
-
-  .logo-box {
-    height: 76px;
-
-    .logo-h2 {
-
-
-      .logo {
-
-        img {
-          width: 250px;
-          height: 57px;
-          background: #0A55EB;
-        }
-      }
-    }
-  }
-
-  .nav {
-    height: 76px;
-    white-space: nowrap;
-
-    a {
-      vertical-align: middle;
-    }
-
-    .link {
-      padding: 0 16px;
-      font-size: 16px;
-      color: #333333;
-      border-right: 1px solid #D7DDE9;
-
-      &.bor {
-        border-right: none;
-      }
-    }
-
-    .btn {
-      margin-left: 44px;
-      width: 109px;
-      height: 35px;
-      line-height: 35px;
-      background: #FFFFFF;
-      border: 1px solid #D7DDE9;
-      font-size: 16px;
-      color: #333333;
-      text-align: center;
-    }
-  }
-}
-
 .h-section {
   height: calc(100% - 364px);
-  background: linear-gradient(180deg, #0089DF 0%, #0A55EB 100%);
+  background: url("../../images/01.jpg") no-repeat center;
+  background-size: cover;
   text-align: center;
 
   .title {
@@ -248,24 +196,27 @@ html, body {
         overflow-y: auto;
         display: none;
 
-        .top{
+        .top {
           padding: 0 19px 0 14px;
           height: 40px;
           line-height: 40px;
-          span{
+
+          span {
             font-size: 14px;
             color: #333333;
           }
-          em{
+
+          em {
             font-size: 14px;
             color: #333333;
             cursor: pointer;
           }
         }
 
-        .divcook{
+        .divcook {
           padding: 0 4px;
-          li{
+
+          li {
             position: relative;
             height: 38px;
             line-height: 38px;
@@ -275,14 +226,17 @@ html, body {
             font-size: 14px;
             color: #666666;
             text-align: left;
-            .del{
+
+            .del {
               font-size: 14px;
               color: #666666;
               display: none;
             }
-            &:hover{
+
+            &:hover {
               background: #F1F6FA;
-              .del{
+
+              .del {
                 display: block;
               }
             }

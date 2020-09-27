@@ -745,47 +745,10 @@ body {
   height: 100%;
   overflow: hidden;
 }
-.h-head {
-  height: 76px;
-}
-.h-head .logo-box {
-  height: 76px;
-}
-.h-head .logo-box .logo-h2 .logo img {
-  width: 250px;
-  height: 57px;
-  background: #0A55EB;
-}
-.h-head .nav {
-  height: 76px;
-  white-space: nowrap;
-}
-.h-head .nav a {
-  vertical-align: middle;
-}
-.h-head .nav .link {
-  padding: 0 16px;
-  font-size: 16px;
-  color: #333333;
-  border-right: 1px solid #D7DDE9;
-}
-.h-head .nav .link.bor {
-  border-right: none;
-}
-.h-head .nav .btn {
-  margin-left: 44px;
-  width: 109px;
-  height: 35px;
-  line-height: 35px;
-  background: #FFFFFF;
-  border: 1px solid #D7DDE9;
-  font-size: 16px;
-  color: #333333;
-  text-align: center;
-}
 .h-section {
   height: calc(100% - 364px);
-  background: linear-gradient(180deg, #0089DF 0%, #0A55EB 100%);
+  background: url("../../images/01.jpg") no-repeat center;
+  background-size: cover;
   text-align: center;
 }
 .h-section .title {
