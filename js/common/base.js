@@ -42,6 +42,24 @@
     handleBind: function (opt) {
       
       
+      //登录模块弹窗
+      $(document).on('click', '.nav .btn', function () {
+        layer.open({
+          type: 1,
+          title: false,
+          area: ['700px', '496px'],
+          shadeClose: true,
+          move: false,
+          content: $("#loginHtml").html(),
+          success: function (layero, index) {
+            nccode();
+            
+          }
+        });
+        
+        
+      });
+      
       $(document).on('click', '.login-layer .tab li', function () {
         var index = $(this).index();
         $(this).addClass('curr').siblings('li').removeClass('curr');
@@ -58,21 +76,86 @@
         $(".login-layer").hide();
       });
       
-      $(document).on('click', '.choice', function () {
+      $(document).on('input propertychange', '#mobile', function () {
+        var val = $(this).val();
+        $(this).parent().parent().find('.btn').addClass('status');
+        $(this).parent().parent().find('.inp-button').addClass('active');
+      });
+      
+      //发送验证码
+      $(document).on('click', '#code', function () {
+        var $codetext = $(this);
+        
+        //开始倒计时
+        var second = 60, timer = null;
+        
+        timer = setInterval(function () {
+          
+          second -= 1;
+          
+          if (second > 0) {
+            
+            $codetext.val(second + '秒');
+            
+            $codetext.attr('disabled', "true");
+            
+            $codetext.addClass('btnDisabled');
+            
+          } else {
+            
+            clearInterval(timer);
+            
+            $codetext.removeAttr('disabled');
+            
+            $codetext.val('重新获取');
+            
+            $codetext.removeClass('btnDisabled');
+            
+            
+          }
+        }, 1000);
+      });
+      
+      
+      //选择国家地区
+      $(document).on('click', '.choice', function (event) {
+        $(".lately").hide();
         if ($(this).hasClass('choice-curr')) {
           $(this).removeClass('choice-curr');
         } else {
           $(this).addClass('choice-curr');
         }
         $(".choice .h-search-area").toggle();
+        
+        event.stopPropagation();
+        
       });
-  
-  
+      
+      $(document).on('click', '.h-search-area .list dd', function () {
+        var text = $(this).text();
+        $(".choice").find('.text').text(text);
+      });
+      
+      
+      //搜索
       $(document).on('focus', '#lately', function () {
+        $('.h-search-area').hide();
         $('.lately').show();
       });
-  
-    
+      
+      //搜索提交
+      $(document).on('focus', '#searchBtn', function () {
+        window.location.href = '/search.html'
+      });
+      
+      
+      //关闭搜索区域
+      $(document).click(function (e) {
+        var target = $(e.target);
+        if (target.closest(".h-search-box").length != 0) return;
+        $('.lately').hide();
+      });
+      
       
       return this;
     },

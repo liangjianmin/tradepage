@@ -211,7 +211,7 @@ body {
   min-width: 1180px;
 }
 .page-width {
-  width: 80%;
+  width: 1190px;
   margin: 0 auto;
 }
 .page-main {
@@ -504,6 +504,10 @@ body {
   font-size: 14px;
   color: #999999;
 }
+.login-layer .code-box .inp-button.btnDisabled {
+  background: #FAFAFA;
+  border: 1px solid #D7DDE9;
+}
 .login-layer .code-box .inp-button.active {
   border: 1px solid #0088DD;
   color: #0088dd;
@@ -513,7 +517,7 @@ body {
   white-space: nowrap;
   border: 1px solid #D7DDE9;
 }
-.login-layer .code-box:focus-within .code {
+.login-layer .code-box .code:focus-within {
   border: 1px solid #0088DD;
 }
 .login-layer .btn {
@@ -528,6 +532,12 @@ body {
   color: #999999;
   margin: 33px auto 0;
   display: block;
+  transition: all 0.2s ease;
+}
+.login-layer .btn.status {
+  background: #0088DD;
+  border: 1px solid transparent;
+  color: #FFFFFF;
 }
 .login-layer .tip {
   margin-top: 13px;
@@ -733,6 +743,13 @@ body {
   font-size: 12px;
   color: #666666;
 }
+.layui-layer-setwin .layui-layer-close2 {
+  right: -17px !important;
+  top: -58px !important;
+  width: 36px !important;
+  height: 36px !important;
+  background: url("../../images/close.png") no-repeat center !important;
+}
 .icn {
   background-image: url("../../images/icon.png");
   background-repeat: no-repeat;
@@ -748,7 +765,205 @@ body {
   width: 1920px;
   height: 135px;
   background: #3488D7;
-  opacity: 0.92;
+}
+.s-banner .h-search {
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  padding-top: 43px;
+}
+.s-banner .h-search .choice {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  background: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+}
+.s-banner .h-search .choice span {
+  font-size: 14px;
+  color: #999999;
+  vertical-align: middle;
+}
+.s-banner .h-search .choice .arrow {
+  background-position: -80px -10px;
+  width: 12px;
+  height: 9px;
+  margin-left: 10px;
+}
+.s-banner .h-search .choice.choice-curr .arrow {
+  background-position: -98px -9px;
+}
+.s-banner .h-search .choice .h-search-area {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 740px;
+  height: 338px;
+  background: #FFFFFF;
+  z-index: 2;
+  padding-left: 17px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+}
+.s-banner .h-search .choice .h-search-area .inp {
+  margin-top: 13px;
+  width: 214px;
+  height: 32px;
+  background: #F9F9F9;
+  border-radius: 2px;
+  border: 1px solid #D7DDE9;
+  text-align: left;
+}
+.s-banner .h-search .choice .h-search-area .inp .iconfont {
+  margin-left: 7px;
+  font-size: 20px;
+  color: #bbbbbb;
+  vertical-align: middle;
+}
+.s-banner .h-search .choice .h-search-area .inp input {
+  margin-left: 10px;
+  font-size: 12px;
+  background: transparent;
+  vertical-align: middle;
+}
+.s-banner .h-search .choice .h-search-area .inp input::-webkit-input-placeholder {
+  color: #bbbbbb;
+}
+.s-banner .h-search .choice .h-search-area .list {
+  width: 708px;
+  padding-top: 20px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #D7DDE9;
+}
+.s-banner .h-search .choice .h-search-area .list dt {
+  font-size: 18px;
+  color: #333333;
+  display: block;
+  text-align: left;
+  margin-bottom: 7px;
+}
+.s-banner .h-search .choice .h-search-area .list dd {
+  float: left;
+  font-size: 14px;
+  color: #666666;
+  margin-right: 14px;
+  line-height: 40px;
+  transition: all 0.4s ease;
+}
+.s-banner .h-search .choice .h-search-area .list dd:hover,
+.s-banner .h-search .choice .h-search-area .list dd .choice-curr {
+  color: #0088dd;
+}
+.s-banner .h-search .choice .h-search-area::-webkit-scrollbar {
+  width: 10px;
+}
+.s-banner .h-search .choice .h-search-area::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px #CFCFCF;
+}
+.s-banner .h-search .choice .h-search-area::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #EBEBEB;
+}
+.s-banner .h-search .h-search-box {
+  position: relative;
+  margin-left: 2px;
+}
+.s-banner .h-search .h-search-box .inp {
+  width: 583px;
+  height: 50px;
+  background: #FFFFFF;
+  font-size: 14px;
+  padding-left: 22px;
+}
+.s-banner .h-search .h-search-box .inp::-webkit-input-placeholder {
+  color: #999999;
+}
+.s-banner .h-search .h-search-box .inp-button {
+  width: 146px;
+  height: 50px;
+  background: #00af63;
+  line-height: 50px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+.s-banner .h-search .h-search-box .inp-button:hover {
+  background: rgba(0, 175, 99, 0.9);
+}
+.s-banner .h-search .h-search-box .txt {
+  position: absolute;
+  bottom: -28px;
+  left: 0px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.s-banner .h-search .h-search-box .lately {
+  position: absolute;
+  left: 0;
+  top: 55px;
+  width: 605px;
+  height: 207px;
+  background: #FFFFFF;
+  z-index: 11;
+  box-shadow: -1px 2px 13px 4px rgba(187, 192, 195, 0.21);
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+}
+.s-banner .h-search .h-search-box .lately .top {
+  padding: 0 19px 0 14px;
+  height: 40px;
+  line-height: 40px;
+}
+.s-banner .h-search .h-search-box .lately .top span {
+  font-size: 14px;
+  color: #333333;
+}
+.s-banner .h-search .h-search-box .lately .top em {
+  font-size: 14px;
+  color: #333333;
+  cursor: pointer;
+}
+.s-banner .h-search .h-search-box .lately .divcook {
+  padding: 0 4px;
+}
+.s-banner .h-search .h-search-box .lately .divcook li {
+  position: relative;
+  height: 38px;
+  line-height: 38px;
+  transition: all 0.4s ease;
+  padding-left: 10px;
+  padding-right: 16px;
+  font-size: 14px;
+  color: #666666;
+  text-align: left;
+}
+.s-banner .h-search .h-search-box .lately .divcook li .del {
+  font-size: 14px;
+  color: #666666;
+  display: none;
+}
+.s-banner .h-search .h-search-box .lately .divcook li:hover {
+  background: #F1F6FA;
+}
+.s-banner .h-search .h-search-box .lately .divcook li:hover .del {
+  display: block;
+}
+.s-banner .h-search .h-search-box .lately::-webkit-scrollbar {
+  width: 10px;
+}
+.s-banner .h-search .h-search-box .lately::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px #CFCFCF;
+}
+.s-banner .h-search .h-search-box .lately::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #EBEBEB;
 }
 .s-search {
   position: relative;

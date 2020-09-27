@@ -144,7 +144,7 @@ body {
 }
 
 .page-width {
-  width: 80%;
+  width: 1190px;
   margin: 0 auto;
 }
 
@@ -492,7 +492,10 @@ body {
       text-align: center;
       font-size: 14px;
       color: #999999;
-
+      &.btnDisabled{
+        background: #FAFAFA;
+        border: 1px solid #D7DDE9;
+      }
       &.active {
         border: 1px solid #0088DD;
         color: #0088dd;
@@ -503,13 +506,12 @@ body {
       width: 166px;
       white-space: nowrap;
       border: 1px solid #D7DDE9;
-    }
-
-    &:focus-within {
-      .code {
+      &:focus-within {
         border: 1px solid #0088DD;
       }
     }
+
+
   }
 
   .btn {
@@ -524,6 +526,13 @@ body {
     color: #999999;
     margin: 33px auto 0;
     display: block;
+    transition: all 0.2s ease;
+
+    &.status {
+      background: #0088DD;
+      border: 1px solid transparent;
+      color: #FFFFFF;
+    }
   }
 
   .tip {
@@ -647,22 +656,26 @@ body {
 
     .login-bar {
       margin-left: 20px;
+
       .pic {
         width: 42px;
         height: 42px;
         border-radius: 50%;
-        img{
+
+        img {
           width: 42px;
           height: 42px;
           border-radius: 50%;
         }
       }
-      .text{
+
+      .text {
         margin-left: 12px;
         font-size: 14px;
         color: #333333;
       }
-      .logout{
+
+      .logout {
         margin-left: 3px;
         font-size: 14px;
         color: #999999;
@@ -780,6 +793,14 @@ body {
   }
 }
 
+
+.layui-layer-setwin .layui-layer-close2{
+  right: -17px !important;
+  top: -58px !important;
+  width: 36px !important;
+  height: 36px !important;
+  background: url("../../images/close.png") no-repeat center !important;
+}
 
 
 
