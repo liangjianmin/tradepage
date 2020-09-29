@@ -1,0 +1,404 @@
+@import '../common/base.less';
+
+.icn {
+  background-image: url("../../images/icon.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.s-banner {
+  width: 1920px;
+  height: 135px;
+  background: #3488D7;
+
+  .h-search {
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 43px;
+
+    .choice {
+      position: relative;
+      width: 150px;
+      height: 50px;
+      background: #FFFFFF;
+      text-align: center;
+      cursor: pointer;
+
+      span {
+        font-size: 14px;
+        color: #999999;
+        vertical-align: middle;
+      }
+
+      .arrow {
+        background-position: -80px -10px;
+        width: 12px;
+        height: 9px;
+        margin-left: 10px;
+      }
+
+      &.choice-curr {
+        .arrow {
+          background-position: -98px -9px;
+        }
+      }
+
+      .h-search-area {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 740px;
+        height: 338px;
+        background: #FFFFFF;
+        z-index: 2;
+        padding-left: 17px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: none;
+
+        .inp {
+          margin-top: 13px;
+          width: 214px;
+          height: 32px;
+          background: #F9F9F9;
+          border-radius: 2px;
+          border: 1px solid #D7DDE9;
+          text-align: left;
+
+          .iconfont {
+            margin-left: 7px;
+            font-size: 20px;
+            color: #bbbbbb;
+            vertical-align: middle;
+          }
+
+          input {
+            margin-left: 10px;
+            font-size: 12px;
+            background: transparent;
+            vertical-align: middle;
+
+            &::-webkit-input-placeholder {
+              color: #bbbbbb;
+            }
+          }
+        }
+
+        .list {
+          width: 708px;
+          padding-top: 20px;
+          padding-bottom: 17px;
+          border-bottom: 1px solid #D7DDE9;
+
+          dt {
+            font-size: 18px;
+            color: #333333;
+            display: block;
+            text-align: left;
+            margin-bottom: 7px;
+          }
+
+          dd {
+            float: left;
+            font-size: 14px;
+            color: #666666;
+            margin-right: 14px;
+            line-height: 40px;
+            transition: all 0.4s ease;
+
+            &:hover,.choice-curr {
+              color: #0088dd;
+            }
+          }
+        }
+
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 6px;
+          background: #fff;
+
+          box-shadow: 0px 2px 4px 0px #CFCFCF;
+        }
+
+        &::-webkit-scrollbar-track {
+          border-radius: 0;
+          background: #EBEBEB;
+        }
+      }
+    }
+
+    .h-search-box {
+      position: relative;
+      margin-left: 2px;
+
+      .inp {
+        width: 583px;
+        height: 50px;
+        background: #FFFFFF;
+        font-size: 14px;
+        padding-left: 22px;
+
+        &::-webkit-input-placeholder {
+          color: #999999;
+        }
+      }
+
+      .inp-button {
+        width: 146px;
+        height: 50px;
+        background: rgba(0, 175, 99, 1);
+        line-height: 50px;
+        font-size: 16px;
+        color: #ffffff;
+        text-align: center;
+
+        &:hover {
+          background: rgba(0, 175, 99, 0.9);
+        }
+      }
+
+      .txt {
+        position: absolute;
+        bottom: -28px;
+        left: 0px;
+        font-size: 14px;
+        color: #ffffff;
+      }
+
+      .lately {
+        position: absolute;
+        left: 0;
+        top: 55px;
+        width: 605px;
+        height: 207px;
+        background: #FFFFFF;
+        z-index: 11;
+        box-shadow: -1px 2px 13px 4px rgba(187, 192, 195, 0.21);
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: none;
+
+        .top {
+          padding: 0 19px 0 14px;
+          height: 40px;
+          line-height: 40px;
+
+          span {
+            font-size: 14px;
+            color: #333333;
+          }
+
+          em {
+            font-size: 14px;
+            color: #333333;
+            cursor: pointer;
+          }
+        }
+
+        .divcook {
+          padding: 0 4px;
+
+          li {
+            position: relative;
+            height: 38px;
+            line-height: 38px;
+            transition: all 0.4s ease;
+            padding-left: 10px;
+            padding-right: 16px;
+            font-size: 14px;
+            color: #666666;
+            text-align: left;
+
+            .del {
+              font-size: 14px;
+              color: #666666;
+              display: none;
+            }
+
+            &:hover {
+              background: #F1F6FA;
+
+              .del {
+                display: block;
+              }
+            }
+          }
+        }
+
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 6px;
+          background: #fff;
+
+          box-shadow: 0px 2px 4px 0px #CFCFCF;
+        }
+
+        &::-webkit-scrollbar-track {
+          border-radius: 0;
+          background: #EBEBEB;
+        }
+      }
+
+    }
+  }
+}
+
+.s-search {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #EEF2F7;
+
+  .title {
+    a {
+      font-size: 12px;
+      color: #666666;
+
+      &.active {
+        color: #999999;
+      }
+    }
+  }
+
+  .list {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    li {
+      position: relative;
+      height: 130px;
+      padding: 20px 70px 30px 80px;
+      background: #FFFFFF;
+      margin-bottom: 15px;
+      transition: all 0.4s ease;
+
+      .t1 {
+        font-size: 24px;
+        color: #333333;
+        margin-bottom: 15px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 1023px;
+      }
+
+      .text {
+        .text-t1 {
+          font-size: 14px;
+          color: #666666;
+          line-height: 26px;
+        }
+      }
+
+      .type1 {
+        position: absolute;
+        top: 78px;
+        right: 70px;
+        width: 76px;
+        height: 30px;
+        background: #48D37D;
+        line-height: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #ffffff;
+        display: block;
+      }
+
+      .type2 {
+        position: absolute;
+        top: 78px;
+        right: 70px;
+        width: 76px;
+        height: 30px;
+        background: #FA4941;
+        line-height: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #ffffff;
+      }
+
+      &:hover {
+        box-shadow: -1px 2px 13px 4px rgba(187, 192, 195, 0.21);
+
+        .t1 {
+          color: #0088dd;
+        }
+      }
+    }
+  }
+
+  .not-logged-in {
+    position: absolute;
+    bottom: 230px;
+    left: 0;
+    right: 0;
+    width: 1190px;
+    height: 579px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+
+    .not-logged {
+      width: 1027px;
+      height: 230px;
+      background: #32AF5E;
+      opacity: 0.8;
+
+      .not-logged-t1 {
+        font-size: 24px;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 23px;
+      }
+
+      .btn {
+        width: 300px;
+        height: 40px;
+        background: #FFFFFF;
+        border-radius: 2px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 16px;
+        color: #0088dd;
+        line-height: 40px;
+        display: block;
+      }
+    }
+  }
+
+  .bar-text {
+    margin-top: 15px;
+    text-align: center;
+
+    span {
+      font-size: 14px;
+      color: #0088dd;
+    }
+
+    em {
+      font-size: 14px;
+      color: #666666;
+    }
+  }
+}
+
+.layui-laypage .layui-laypage-count, .layui-laypage .layui-laypage-limits, .layui-laypage .layui-laypage-refresh, .layui-laypage .layui-laypage-skip {
+  background: #EEF2F7;
+}
+
+.layui-laypage input:focus, .layui-laypage select:focus {
+  border-color: #0088DD !important;
+}
