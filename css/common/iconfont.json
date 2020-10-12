@@ -6,6 +6,13 @@
   "description": "海贸云商",
   "glyphs": [
     {
+      "icon_id": "1638283",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
       "icon_id": "17608325",
       "name": "sousuo备份 4",
       "font_class": "sousuobeifen4",

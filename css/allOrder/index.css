@@ -813,325 +813,108 @@ body {
   height: 36px !important;
   background: url("../../images/close.png") no-repeat center !important;
 }
-.icn {
-  background-image: url("../../images/icon.png");
-  background-repeat: no-repeat;
-  display: inline-block;
-  vertical-align: middle;
+.menu {
+  width: 221px;
+  background: #F6F9FD;
+  padding-bottom: 120px;
 }
-html,
-body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+.menu .pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 18px auto 0;
 }
-.h-section {
-  height: calc(100% - 364px);
-  background: url("../../images/01.jpg") no-repeat center;
-  background-size: cover;
-  text-align: center;
+.menu .pic img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
-.h-section .title {
-  font-size: 50px;
-  color: #ffffff;
-  font-weight: bold;
-  text-align: center;
-}
-.h-section .h-search {
-  position: relative;
-  margin-top: 57px;
-  text-align: center;
-  white-space: nowrap;
-}
-.h-section .h-search .choice {
-  width: 150px;
-  height: 50px;
-  background: #FFFFFF;
-  text-align: center;
-  cursor: pointer;
-}
-.h-section .h-search .choice span {
-  font-size: 14px;
-  color: #999999;
-  vertical-align: middle;
-}
-.h-section .h-search .choice .arrow {
-  background-position: -80px -10px;
-  width: 12px;
-  height: 9px;
-  margin-left: 10px;
-}
-.h-section .h-search .choice.choice-curr .arrow {
-  background-position: -98px -9px;
-}
-.h-section .h-search .choice .h-search-area {
-  position: absolute;
-  top: 55px;
-  left: 0;
-  width: 740px;
-  height: 338px;
-  background: #FFFFFF;
-  z-index: 2;
-  padding-left: 17px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  display: none;
-}
-.h-section .h-search .choice .h-search-area .inp {
-  margin-top: 13px;
-  width: 214px;
-  height: 32px;
-  background: #F9F9F9;
-  border-radius: 2px;
-  border: 1px solid #D7DDE9;
-  text-align: left;
-}
-.h-section .h-search .choice .h-search-area .inp .iconfont {
-  margin-left: 7px;
-  font-size: 20px;
-  color: #bbbbbb;
-  vertical-align: middle;
-}
-.h-section .h-search .choice .h-search-area .inp input {
-  margin-left: 10px;
-  font-size: 12px;
-  background: transparent;
-  vertical-align: middle;
-}
-.h-section .h-search .choice .h-search-area .inp input::-webkit-input-placeholder {
-  color: #bbbbbb;
-}
-.h-section .h-search .choice .h-search-area .list {
-  width: 708px;
-  padding-top: 20px;
-  padding-bottom: 17px;
-  border-bottom: 1px solid #D7DDE9;
-}
-.h-section .h-search .choice .h-search-area .list dt {
-  font-size: 18px;
-  color: #333333;
-  display: block;
-  text-align: left;
-  margin-bottom: 7px;
-}
-.h-section .h-search .choice .h-search-area .list dd {
-  float: left;
+.menu .t1 {
   font-size: 14px;
   color: #666666;
-  margin-right: 14px;
-  line-height: 40px;
-  transition: all 0.4s ease;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 19px;
 }
-.h-section .h-search .choice .h-search-area .list dd:hover {
+.menu .t2 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.menu .t2.mb {
+  margin-bottom: 25px;
+}
+.menu .t2 span {
+  font-size: 12px;
+  color: #666666;
+}
+.menu .t2 em {
+  font-size: 12px;
+  color: #666666;
+}
+.menu .t2 a {
+  font-size: 12px;
+  color: #0088dd;
+  cursor: pointer;
+}
+.menu .list li {
+  position: relative;
+  transition: all 0.2s ease;
+}
+.menu .list li .box {
+  height: 58px;
+  padding-left: 29px;
+  display: block;
+  line-height: 58px;
+}
+.menu .list li .box span {
+  font-size: 16px;
+  color: #333333;
+}
+.menu .list li .box .iconfont {
+  position: absolute;
+  right: 29px;
+  top: 0;
+  color: #c8ceda;
+  font-size: 25px;
+}
+.menu .list li .box em {
+  font-size: 12px;
+  color: #f3632c;
+}
+.menu .list li .wrap dl {
+  padding-left: 49px;
+}
+.menu .list li .wrap dl dd a {
+  font-size: 14px;
+  color: #666666;
+  line-height: 34px;
+}
+.menu .list li:hover {
+  background: #ffffff;
+}
+.menu .list li:hover a.box span {
   color: #0088dd;
 }
-.h-section .h-search .choice .h-search-area::-webkit-scrollbar {
-  width: 10px;
+.menu .list li:hover a.box .iconfont {
+  color: #0088dd;
 }
-.h-section .h-search .choice .h-search-area::-webkit-scrollbar-thumb {
-  border-radius: 6px;
-  background: #fff;
-  box-shadow: 0px 2px 4px 0px #CFCFCF;
+.menu .list li.curr {
+  background: #ffffff;
 }
-.h-section .h-search .choice .h-search-area::-webkit-scrollbar-track {
-  border-radius: 0;
-  background: #EBEBEB;
+.menu .list li.curr .box span,
+.menu .list li.curr .box .iconfont {
+  color: #0088dd;
 }
-.h-section .h-search .h-search-box {
-  position: relative;
-  margin-left: 2px;
+.menu .list li.curr .wrap .curr a {
+  color: #0088dd;
 }
-.h-section .h-search .h-search-box .inp {
-  width: 583px;
-  height: 50px;
+.h-user {
+  background: #EEF2F7;
+  padding-top: 20px;
+}
+.h-user .bar-right {
+  width: 944px;
   background: #FFFFFF;
-  font-size: 14px;
-  padding-left: 22px;
-}
-.h-section .h-search .h-search-box .inp::-webkit-input-placeholder {
-  color: #999999;
-}
-.h-section .h-search .h-search-box .inp-button {
-  width: 146px;
-  height: 50px;
-  background: #00af63;
-  line-height: 50px;
-  font-size: 16px;
-  color: #ffffff;
-  text-align: center;
-}
-.h-section .h-search .h-search-box .inp-button:hover {
-  background: rgba(0, 175, 99, 0.9);
-}
-.h-section .h-search .h-search-box .txt {
-  position: absolute;
-  bottom: -28px;
-  left: 0px;
-  font-size: 14px;
-  color: #ffffff;
-}
-.h-section .h-search .h-search-box .lately {
-  position: absolute;
-  left: 0;
-  top: 55px;
-  width: 605px;
-  height: 207px;
-  background: #FFFFFF;
-  z-index: 11;
-  box-shadow: -1px 2px 13px 4px rgba(187, 192, 195, 0.21);
-  overflow-x: hidden;
-  overflow-y: auto;
-  display: none;
-}
-.h-section .h-search .h-search-box .lately .top {
-  padding: 0 19px 0 14px;
-  height: 40px;
-  line-height: 40px;
-}
-.h-section .h-search .h-search-box .lately .top span {
-  font-size: 14px;
-  color: #333333;
-}
-.h-section .h-search .h-search-box .lately .top em {
-  font-size: 14px;
-  color: #333333;
-  cursor: pointer;
-}
-.h-section .h-search .h-search-box .lately .divcook {
-  padding: 0 4px;
-}
-.h-section .h-search .h-search-box .lately .divcook li {
-  position: relative;
-  height: 38px;
-  line-height: 38px;
-  transition: all 0.4s ease;
-  padding-left: 10px;
-  padding-right: 16px;
-  font-size: 14px;
-  color: #666666;
-  text-align: left;
-}
-.h-section .h-search .h-search-box .lately .divcook li .del {
-  font-size: 14px;
-  color: #666666;
-  display: none;
-}
-.h-section .h-search .h-search-box .lately .divcook li:hover {
-  background: #F1F6FA;
-}
-.h-section .h-search .h-search-box .lately .divcook li:hover .del {
-  display: block;
-}
-.h-section .h-search .h-search-box .lately::-webkit-scrollbar {
-  width: 10px;
-}
-.h-section .h-search .h-search-box .lately::-webkit-scrollbar-thumb {
-  border-radius: 6px;
-  background: #fff;
-  box-shadow: 0px 2px 4px 0px #CFCFCF;
-}
-.h-section .h-search .h-search-box .lately::-webkit-scrollbar-track {
-  border-radius: 0;
-  background: #EBEBEB;
-}
-.h-footer {
-  position: relative;
-  width: 100%;
-  height: 288px;
-  background: #283541;
-}
-.h-footer .page-width {
-  position: relative;
-}
-.h-footer .link dt {
-  float: left;
-  width: 84px;
-  padding-left: 7px;
-  font-size: 14px;
-  color: #ffffff;
-  border-left: 1px dashed #0088DD;
-  margin-right: 35px;
-}
-.h-footer .link dd {
-  float: left;
-  margin-right: 3%;
-}
-.h-footer .link dd a {
-  font-size: 12px;
-  color: #999999;
-}
-.h-footer .h-icon .ico-1 {
-  background-position: -57px -4px;
-  width: 15px;
-  height: 15px;
-}
-.h-footer .h-icon .ico-2 {
-  background-position: -57px -4px;
-  width: 15px;
-  height: 15px;
-}
-.h-footer .h-icon .ico-3 {
-  background-position: -4px -2px;
-  width: 13px;
-  height: 16px;
-}
-.h-footer .h-icon span {
-  font-size: 12px;
-  color: #999999;
-  vertical-align: middle;
-  margin-left: 5px;
-  margin-right: 20px;
-}
-.h-footer .official-account {
-  position: absolute;
-  right: 0;
-  top: 45px;
-}
-.h-footer .official-account li {
-  float: left;
-}
-.h-footer .official-account li:first-child {
-  margin-right: 79px;
-}
-.h-footer .official-account li .pic {
-  width: 70px;
-  height: 70px;
-  background: #FFFFFF;
-  border-radius: 2px;
-  margin-bottom: 20px;
-}
-.h-footer .official-account li .pic img {
-  width: 70px;
-  height: 70px;
-  background: #FFFFFF;
-  border-radius: 2px;
-}
-.h-footer .official-account li .t1 {
-  font-size: 14px;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 5px;
-}
-.h-footer .official-account li .t2 {
-  font-size: 14px;
-  color: #999999;
-}
-.h-footer .txt {
-  margin-top: 20px;
-  font-size: 12px;
-  color: #666666;
-}
-.noselect {
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Chrome/Safari/Opera */
-  -khtml-user-select: none;
-  /* Konqueror */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
+  padding-left: 20px;
 }
 /*# sourceMappingURL=index.css.map */

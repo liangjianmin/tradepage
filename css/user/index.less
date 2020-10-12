@@ -1,7 +1,209 @@
 @import '../common/base.less';
+@import '../common/menu.less';
 
+.h-user {
+  background: #EEF2F7;
+  padding-top: 20px;
 
+  .bar-right {
+    width: 944px;
+    background: #FFFFFF;
+    padding-left: 20px;
 
+    .show-data {
+      padding-top: 30px;
+      text-align: center;
+      white-space: nowrap;
+      height: 121px;
+
+      li {
+        position: relative;
+        width: 33.3%;
+        text-align: center;
+        border-right: 1px solid #E6E9F1;
+
+        &:last-child {
+          border-right: none;
+        }
+
+        .t1 {
+          position: absolute;
+          right: 109px;
+          top: -4px;
+          width: 23px;
+          height: 28px;
+          line-height: 28px;
+          background: url("../../images/level.png") no-repeat center;
+          background-size: cover;
+          font-size: 14px;
+          color: #ffffff;
+        }
+
+        .t2 {
+          position: absolute;
+          bottom: -24px;
+          left: 11px;
+          font-size: 12px;
+          color: #da4b4b;
+        }
+
+        .iconfont {
+          font-size: 53px;
+        }
+
+        p {
+          margin-top: 10px;
+          font-size: 14px;
+          color: #333333;
+        }
+      }
+    }
+
+    .section {
+      padding-top: 17px;
+      width: 920px;
+      border-top: 1px solid #E6E9F1;
+
+      .section-l {
+        width: 599px;
+
+        .title {
+          margin-bottom: 15px;
+
+          .tt-l {
+            font-size: 16px;
+            color: #333333;
+            font-weight: bold;
+          }
+
+          .tt-r {
+            span {
+              font-size: 12px;
+              color: #666666;
+            }
+
+            .iconfont {
+              margin-left: 4px;
+              width: 12px;
+              color: #666666;
+            }
+
+            &:hover {
+              span {
+                color: #0088dd;
+              }
+
+              .iconfont {
+                color: #0088dd;
+              }
+            }
+          }
+        }
+
+        .list {
+          li {
+            width: 597px;
+            padding: 18px 0;
+            background: #FAFAFA;
+            border: 1px solid #EDEDED;
+            margin-bottom: 15px;
+
+            .iconfont {
+              margin-left: 22px;
+              font-size: 20px;
+              color: #000000;
+
+              &.curr {
+                color: #d2cece;
+              }
+            }
+
+            .text {
+              margin-left: 16px;
+
+              .t1 {
+                width: 524px;
+                font-size: 14px;
+                color: #333333;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+
+                em {
+                  color: #f3632c;
+                }
+              }
+
+              .t2 {
+                margin-top: 18px;
+                font-size: 14px;
+                color: #666666;
+              }
+            }
+          }
+        }
+      }
+
+      .section-r {
+        width: 304px;
+
+        .title {
+          font-size: 16px;
+          color: #333333;
+          font-weight: bold;
+          margin-bottom: 25px;
+
+          &.mt {
+            margin-top: 15px;
+          }
+        }
+
+        .list {
+          li {
+            a {
+              font-size: 14px;
+              color: #666666;
+              margin-bottom: 20px;
+              display: block;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+          }
+        }
+
+        .arrow {
+          width: 100%;
+          text-align: right;
+          padding-bottom: 12px;
+          border-bottom: 1px solid #E6E9F1;
+          display: block;
+
+          span {
+            font-size: 12px;
+            color: #666666;
+          }
+
+          .iconfont {
+            margin-left: 4px;
+            width: 12px;
+            color: #666666;
+          }
+
+          &:hover {
+            .iconfont {
+              color: #0088dd;
+            }
+
+            span {
+              color: #0088dd;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
 
