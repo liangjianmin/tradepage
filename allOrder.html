@@ -107,6 +107,13 @@
                         <span>个人信息</span>
                         <i class="iconfont iconyoujiantou"></i>
                     </a>
+                    <div class="wrap" style="display: none">
+                        <dl>
+                            <dd><a href="javascript:;">基本信息</a></dd>
+                            <dd><a href="javascript:;">修改手机</a></dd>
+                            <dd><a href="javascript:;">修改密码</a></dd>
+                        </dl>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -118,39 +125,40 @@
                         <select name="">
                             <option value="0">阅读状态</option>
                             <option value="0">阅读状态1</option>
-                            <option value="0">阅读状态2 </option>
+                            <option value="0">阅读状态2</option>
                         </select>
                     </div>
                     <div class="lineBlock a-select">
                         <select name="">
                             <option value="0">报告类型</option>
                             <option value="0">报告类型1</option>
-                            <option value="0">报告类型2 </option>
+                            <option value="0">报告类型2</option>
                         </select>
                     </div>
                     <div class="lineBlock a-select">
                         <select name="">
                             <option value="0">订单状态</option>
                             <option value="0">订单状态1</option>
-                            <option value="0">订单状态2 </option>
+                            <option value="0">订单状态2</option>
                         </select>
                     </div>
                     <div class="lineBlock a-select">
                         <select name="">
                             <option value="0">国别筛选</option>
                             <option value="0">订单状态1</option>
-                            <option value="0">订单状态2 </option>
+                            <option value="0">订单状态2</option>
                         </select>
                     </div>
-                    <div class="lineBlock a-search">
-                        <i class="iconfont iconsousuobeifen4"></i>
-                        <input type="text" placeholder="请输入搜索关键词" />
+                    <div class="lineBlock a-search va-m">
+                        <i class="iconfont iconsousuobeifen4 va-m"></i>
+                        <input type="text" placeholder="请输入搜索关键词" class="va-m"/>
+                        <b class="lineBlock emptys"></b>
                     </div>
                     <div class="lineBlock a-select" style="margin-right: 20px;">
                         <select name="">
                             <option value="0">选择排序</option>
                             <option value="0">订单状态1</option>
-                            <option value="0">订单状态2 </option>
+                            <option value="0">订单状态2</option>
                         </select>
                     </div>
                 </div>
@@ -164,6 +172,53 @@
                 <li style="width: 135px;;padding-left: 15px;">深度信用报告（3）</li>
                 <li style="padding-left: 15px;">未付款（1）</li>
             </ul>
+            <div class="list">
+                <ul class="box">
+                    <li>
+                        <div class="lbBox wrap">
+                            <i class="iconfont iconxiaoxi va-t"></i>
+                            <div class="lineBlock va-t text">
+                                <p class="t1">LAVA INTERNATIONAL LIMITED（印度）</p>
+                                <p class="t2">订单编号：202006223514 <em class="color1">深度信用报告</em></p>
+                                <p class="t2">注册编号：ABCD12345675</p>
+                                <p class="t2">企业经营地址：C-7/227, Second Floor Sector-7, Rohini Delhi DL 110085 IN,India</p>
+                            </div>
+                        </div>
+                        <div class="time">订单日期：2020年12月12日 报告更新日期：2020年12月20日</div>
+                        <a href="javascript:;" class="btn1">点击阅读</a>
+                        <a href="javascript:;" class="btn2">申请开票</a>
+                    </li>
+                    <li>
+                        <div class="lbBox wrap">
+                            <i class="iconfont iconxiaoxi va-t"></i>
+                            <div class="lineBlock va-t text">
+                                <p class="t1">LAVA INTERNATIONAL LIMITED（印度）</p>
+                                <p class="t2">订单编号：202006223514 <em class="color2">风险决策报告</em></p>
+                                <p class="t2">注册编号：ABCD12345675</p>
+                                <p class="t2">企业经营地址：C-7/227, Second Floor Sector-7, Rohini Delhi DL 110085 IN,India</p>
+                            </div>
+                        </div>
+                        <div class="time">订单日期：2020年12月12日 报告更新日期：2020年12月20日</div>
+                        <a href="javascript:;" class="btn1">点击阅读</a>
+                        <a href="javascript:;" class="btn2">申请开票</a>
+                    </li>
+                    <li>
+                        <div class="lbBox wrap">
+                            <i class="iconfont iconxiaoxi va-t disabled"></i>
+                            <div class="lineBlock va-t text">
+                                <p class="t1">LAVA INTERNATIONAL LIMITED（印度）</p>
+                                <p class="t2">订单编号：202006223514 <em class="color2">风险决策报告</em></p>
+                                <p class="t2">注册编号：ABCD12345675</p>
+                                <p class="t2">企业经营地址：C-7/227, Second Floor Sector-7, Rohini Delhi DL 110085 IN,India</p>
+                            </div>
+                        </div>
+                        <div class="time">订单日期：2020年12月12日</div>
+                        <a href="javascript:;" class="btn3">等待付款</a>
+                        <a href="javascript:;" class="btn4">剩余21小时25分</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="pagination" style="text-align: center;"></div>
         </div>
     </div>
 </div>
@@ -239,6 +294,22 @@
 <script type="text/javascript" src="js/common/base.js"></script>
 <script type="text/javascript">
   $(function () {
+
+    layui.laypage.render({
+      elem: 'pagination',
+      count: 100,
+      limit: 10,
+      curr: 1,
+      layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip'],
+      theme: '#0088DD',
+      jump: function (obj, first) {
+
+        if (!first) {
+
+
+        }
+      }
+    });
 
 
   })

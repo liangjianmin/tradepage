@@ -1,0 +1,105 @@
+@import '../common/base.less';
+@import '../common/menu.less';
+
+.h-user {
+  background: #EEF2F7;
+  padding-top: 20px;
+
+  .bar-right {
+    width: 944px;
+    background: #FFFFFF;
+    padding-left: 20px;
+    padding-top: 27px;
+
+    .top {
+      .l {
+        font-size: 16px;
+        color: #333333;
+        font-weight: bold;
+      }
+
+      .r {
+        .a-select {
+          height: 25px;
+          background: #FFFFFF;
+          border-radius: 1px;
+          border: 1px solid #E6E9F1;
+          margin-right: 15px;
+          vertical-align: middle;
+          cursor: pointer;
+
+          select {
+            width: 100%;
+            height: 25px;
+            font-size: 12px;
+            color: #666666;
+            cursor: pointer;
+          }
+        }
+
+        .a-search {
+          width: 156px;
+          height: 25px;
+          border: 1px solid #E6E9F1;
+          margin-right: 15px;
+          white-space: nowrap;
+
+          .iconfont {
+            color: #e6e9f1;
+            font-size: 16px;
+            margin: 0 5px;
+          }
+
+          input {
+            border-left: 1px solid #E6E9F1;
+            font-size: 12px;
+            line-height: 25px;
+            padding-left: 7px;
+            width: 109px;
+          }
+        }
+      }
+    }
+
+    .list {
+      margin-top: 20px;
+      .box {
+        li {
+          position: relative;
+          width: 893px;
+          background: #FAFAFA;
+          border: 1px solid #EDEDED;
+          margin-bottom: 15px;
+          padding: 15px 0 10px 27px;
+          .t1{
+            font-size: 16px;
+            color: #333333;
+            font-weight: bold;
+            margin-bottom: 8px;
+          }
+          .t2{
+            font-size: 12px;
+            color: #666666;
+            line-height: 22px;
+          }
+          .iconfont{
+            position: absolute;
+            right: 18px;
+            top: 13px;
+            font-size: 23px;
+            color: #dfdfdf;
+            cursor: pointer;
+          }
+          .btn{
+            position: absolute;
+            right: 58px;
+            top: 42px;
+            font-size: 14px;
+            color: #666666;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

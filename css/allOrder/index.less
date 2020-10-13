@@ -25,19 +25,38 @@
           border-radius: 1px;
           border: 1px solid #E6E9F1;
           margin-right: 15px;
+          vertical-align: middle;
+          cursor: pointer;
 
           select {
             width: 100%;
             height: 25px;
             font-size: 12px;
             color: #666666;
+            cursor: pointer;
           }
         }
-        .a-search{
-          width: 156px;
-          height: 23px;
-          border: 1px solid #E6E9F1;
 
+        .a-search {
+          width: 156px;
+          height: 25px;
+          border: 1px solid #E6E9F1;
+          margin-right: 15px;
+          white-space: nowrap;
+
+          .iconfont {
+            color: #e6e9f1;
+            font-size: 16px;
+            margin: 0 5px;
+          }
+
+          input {
+            border-left: 1px solid #E6E9F1;
+            font-size: 12px;
+            line-height: 25px;
+            padding-left: 7px;
+            width: 109px;
+          }
         }
       }
     }
@@ -56,42 +75,135 @@
         color: #666666;
         border-right: 1px solid #DEE2E8;
         cursor: pointer;
-        &:last-child{
+
+        &:last-child {
           border-right: none;
+        }
+      }
+    }
+
+    .list {
+      .box {
+        li {
+          position: relative;
+          width: 920px;
+          background: #FAFAFA;
+          border: 1px solid #EDEDED;
+          margin-bottom: 15px;
+
+          .wrap {
+            padding: 15px 0 18px 25px;
+            background: #FAFAFA;
+
+            .iconfont {
+              font-size: 20px;
+              color: #4c4c4c;
+              &.disabled{
+                color: #d2cece;
+              }
+            }
+
+            .text {
+              margin-left: 2px;
+
+              .t1 {
+                font-size: 16px;
+                color: #333333;
+                font-weight: bold;
+                margin-bottom: 15px;
+              }
+
+              .t2 {
+                font-size: 12px;
+                color: #666666;
+                line-height: 22px;
+
+                .color1 {
+                  font-size: 12px;
+                  color: #f3632c;
+                  margin-left: 5px;
+                }
+
+                .color2 {
+                  font-size: 12px;
+                  color: #00AF63;
+                  margin-left: 5px;
+                }
+              }
+            }
+          }
+
+          .time {
+            padding-right: 32px;
+            height: 28px;
+            background: #F2F2F2;
+            line-height: 28px;
+            text-align: right;
+            font-size: 12px;
+            color: #666666;
+          }
+
+          .btn1 {
+            position: absolute;
+            right: 32px;
+            top: 22px;
+            width: 68px;
+            height: 40px;
+            background: #FFFFFF;
+            border-radius: 2px;
+            border: 1px solid #0088DD;
+            line-height: 40px;
+            text-align: center;
+            color: #0088dd;
+            font-size: 14px;
+            transition: all 0.2s ease;
+            &:hover{
+              background: #E3F0F9;
+            }
+          }
+
+
+          .btn2 {
+            position: absolute;
+            right: 32px;
+            top: 80px;
+            font-size: 14px;
+            color: #666666;
+            text-decoration: underline;
+            width: 68px;
+            text-align: center;
+            padding-bottom: 4px;
+            &:hover{
+              color: #0088dd;
+            }
+          }
+
+          .btn3 {
+            position: absolute;
+            right: 32px;
+            top: 22px;
+            width: 68px;
+            height: 40px;
+            background: #F3632C;
+            border-radius: 2px;
+            line-height: 40px;
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 14px;
+          }
+
+          .btn4 {
+            position: absolute;
+            right: 32px;
+            top: 80px;
+            font-size: 12px;
+            color: #F3632C;
+            width: 75px;
+            text-align: center;
+            white-space: nowrap;
+          }
         }
       }
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
