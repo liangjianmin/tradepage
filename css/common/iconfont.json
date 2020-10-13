@@ -6,6 +6,13 @@
   "description": "海贸云商",
   "glyphs": [
     {
+      "icon_id": "17645074",
+      "name": "xiaoxi-shibai",
+      "font_class": "xiaoxi-shibai",
+      "unicode": "e6b9",
+      "unicode_decimal": 59065
+    },
+    {
       "icon_id": "17643114",
       "name": "tishi备份 2",
       "font_class": "tishibeifen2",
