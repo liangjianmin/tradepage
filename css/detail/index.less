@@ -1,5 +1,10 @@
 @import '../common/base.less';
 
+
+table {
+
+}
+
 .icn {
   background-image: url("../../images/icon.png");
   background-repeat: no-repeat;
@@ -177,8 +182,6 @@
     .baseinfo {
       width: 1120px;
       margin-top: 20px;
-      border-collapse: collapse;
-      border-spacing: 0;
       margin-bottom: 34px;
 
       tbody {
@@ -331,6 +334,11 @@
             color: #f42e2e;
             margin-right: 8px;
           }
+
+          a {
+            color: #0088dd;
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -342,24 +350,28 @@
 
       tbody {
         tr {
-          &.toggle{
+          &.toggle {
             display: none;
           }
+
           td {
             padding: 10px 0 10px 14px;
             min-height: 36px;
             border: 1px solid #E6E9F1;
             font-size: 14px;
             color: #666666;
-            .togglebox{
+
+            .togglebox {
               font-size: 14px;
               color: #0088dd;
             }
-            .text{
+
+            .text {
               font-size: 14px;
               color: #666666;
               line-height: 36px;
             }
+
             &.color1 {
               background: #F5F6F8;
             }
@@ -368,7 +380,7 @@
       }
     }
 
-    .shareholder{
+    .shareholder {
       width: 1124px;
       margin-top: 27px;
       margin-bottom: 45px;
@@ -381,10 +393,12 @@
             border: 1px solid #E6E9F1;
             font-size: 14px;
             color: #666666;
+
             &.color1 {
               background: #F5F6F8;
             }
-            &.font2{
+
+            &.font2 {
               font-size: 14px;
               color: #333333;
             }
@@ -393,11 +407,12 @@
       }
     }
 
-    .controller{
+    .controller {
       width: 556px;
       margin-top: 27px;
       margin-bottom: 45px;
       border: 2px solid #A9BDD0;
+
       tbody {
         tr {
           td {
@@ -407,17 +422,260 @@
             border: 1px solid #E6E9F1;
             font-size: 14px;
             color: #666666;
+
             &.color1 {
               background: #F5F6F8;
             }
-            &.font2{
+
+            &.font2 {
               font-size: 14px;
               color: #333333;
             }
-            .txt{
+
+            .txt {
               line-height: 25px;
             }
           }
+        }
+      }
+    }
+
+    .enterprise {
+      margin-top: 12px;
+      width: 1120px;
+
+      tbody {
+        tr {
+          td {
+            border: 1px solid #E6E9F1;
+            background: #ffffff;
+            padding: 5px 0 18px 20px;
+
+            .t1 {
+              width: 380px;
+              line-height: 26px;
+            }
+
+            &.color1 {
+              height: 38px;
+              background: #F5F6F8;
+              padding: 0 0 0 20px;
+            }
+
+            &.font1 {
+              font-size: 14px;
+              color: #666666;
+            }
+
+            &.font2 {
+              font-size: 14px;
+              color: #333333;
+            }
+          }
+        }
+      }
+    }
+
+    .business-information {
+      margin-top: 26px;
+      width: 1120px;
+
+      tbody {
+        tr {
+          td {
+            border: 1px solid #E6E9F1;
+            height: 38px;
+            padding-left: 24px;
+            font-size: 14px;
+
+            &.font1 {
+              background: #F5F6F8;
+              color: #666666;
+            }
+
+            &.font2 {
+              color: #333333;
+            }
+
+            &.font3 {
+              color: #666666;
+            }
+          }
+        }
+      }
+    }
+
+    .record {
+      margin-top: 26px;
+      width: 538px;
+
+      tbody {
+        tr {
+          td {
+            border: 1px solid #E6E9F1;
+            height: 38px;
+            padding-left: 24px;
+            font-size: 14px;
+
+            &.font1 {
+              background: #F5F6F8;
+              color: #666666;
+            }
+
+            &.font2 {
+              color: #333333;
+            }
+
+            &.font3 {
+              color: #666666;
+            }
+          }
+        }
+      }
+    }
+
+    .empty {
+      margin-top: 32px;
+      width: 402px;
+      line-height: 38px;
+      background: #EBF8FA;
+      border: 1px solid #CBE0E3;
+
+      .iconfont {
+        padding: 0 16px;
+        font-size: 24px;
+        color: #6bc1a2;
+      }
+
+      span {
+        padding-left: 10px;
+        border-left: 1px solid #CBE0E3;
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+
+    .download {
+      width: 167px;
+      height: 25px;
+      background: #0088DD;
+      text-align: center;
+      display: block;
+
+      .iconfont {
+        font-size: 19px;
+        color: #ffffff;
+      }
+
+      span {
+        font-size: 12px;
+        color: #ffffff;
+      }
+    }
+
+    .finance {
+      margin-top: 26px;
+      width: 1120px;
+
+      tbody {
+        tr {
+          td {
+            border: 1px solid #E6E9F1;
+            height: 38px;
+            padding-left: 24px;
+            padding-right: 13px;
+            font-size: 14px;
+
+            .tt {
+              font-size: 14px;
+              color: #333333;
+            }
+
+            .t1 {
+              padding-right: 43px;
+              text-align: right;
+
+              span {
+                font-size: 14px;
+                color: #666666;
+              }
+
+              em {
+                font-size: 14px;
+                color: #333333;
+                font-weight: bold;
+              }
+            }
+
+            &.font1 {
+              background: #F5F6F8;
+              color: #666666;
+            }
+
+            &.font2 {
+              color: #333333;
+            }
+
+            &.font3 {
+              color: #666666;
+            }
+          }
+        }
+      }
+    }
+
+    .dimension {
+      width: 1117px;
+      height: 250px;
+      background: rgba(241, 234, 225, 0.92);
+      margin: 38px auto 0;
+
+      .text {
+        padding: 37px 0 0 95px;
+
+        .t1 {
+          font-size: 24px;
+          color: #584d4d;
+          font-weight: bold;
+          margin-bottom: 8px;
+        }
+
+        .t2 {
+          font-size: 16px;
+          color: #584d4d;
+          margin-bottom: 22px;
+        }
+
+        .list {
+          li {
+            float: left;
+            margin-right: 25px;
+
+            .iconfont {
+              color: #3f71f3;
+              font-size: 18px;
+            }
+
+            span {
+              font-size: 16px;
+              color: #232429;
+              margin-left: 3px;
+            }
+          }
+        }
+
+        .btn {
+          margin-top: 30px;
+          width: 104px;
+          height: 38px;
+          background: #FFFFFF;
+          border-radius: 2px;
+          border: 1px solid #008558;
+          font-size: 14px;
+          color: #008558;
+          text-align: center;
+          line-height: 38px;
+          display: block;
         }
       }
     }
