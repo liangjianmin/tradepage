@@ -1665,4 +1665,61 @@ body {
   margin-left: 7px;
   margin-right: 1px;
 }
-/*# sourceMappingURL=index.css.map */
+.information-layer {
+  padding: 30px 0 60px 26px;
+}
+.information-layer .t1 {
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  border-left: 3px solid #0088DD;
+  padding-left: 5px;
+}
+.information-layer .t2 {
+  padding-left: 24px;
+  margin-top: 7px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 24px;
+}
+.information-layer .btn {
+  width: 128px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px solid #0088DD;
+  font-size: 16px;
+  color: #0088DD;
+  margin: 46px auto 0;
+  display: block;
+}
+.risk-layer {
+  padding: 30px 0 60px 26px;
+}
+.risk-layer .t1 {
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  border-left: 3px solid #0088DD;
+  padding-left: 5px;
+}
+.risk-layer .t2 {
+  padding-left: 24px;
+  margin-top: 7px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 24px;
+}
+.risk-layer .btn {
+  width: 128px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px solid #0088DD;
+  font-size: 16px;
+  color: #0088DD;
+  margin: 46px auto 0;
+  display: block;
+}
