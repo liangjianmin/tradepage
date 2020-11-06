@@ -150,7 +150,7 @@
             </div>
             <div class="lineBlock va-m h-search-box">
                 <input type="text" placeholder='请选择目标企业所在国家，并输入企业名称关键词，如“etradso”' class="inp va-m" id="lately"/>
-                <input type="button" value="查询" class="inp-button va-m" id="searchBtn"/>
+                <input type="button" value="查一下" class="inp-button va-m" id="searchBtn"/>
                 <div class="lately">
                     <div class="top clr">
                         <span class="fl">搜索记录</span>
@@ -211,7 +211,8 @@
                 </li>
                 <li>
                     <i class="iconfont icondengji1"></i>
-                    <p>公共记录</p>
+                    <p>风险诉讼</p>
+                    <b class="bg"></b>
                 </li>
                 <li>
                     <i class="iconfont iconbianzu3"></i>
@@ -238,7 +239,7 @@
             <p class="tt-3 tt-3-mb">上述数据为一年前数据，建议更新数据</p>
         </div>
         <!--基本信息-->
-        <p class="title" style="width: 82px;">基本信息</p>
+        <p class="title" style="width: 82px;" id="floor1">基本信息</p>
         <div class="box">
             <table class="baseinfo">
                 <tbody>
@@ -426,7 +427,7 @@
             </table>
         </div>
         <!--管理者-->
-        <p class="title" style="width: 127px;">管理层（2管理层）</p>
+        <p class="title" style="width: 127px;" id="floor2">管理层（2管理层）</p>
         <div class="box clr">
             <div class="fl">
                 <table class="controller">
@@ -548,7 +549,7 @@
             </table>
         </div>
         <!--经营信息-->
-        <p class="title" style="width: 86px;margin-top: 46px;">经营信息</p>
+        <p class="title" style="width: 86px;margin-top: 46px;" id="floor3">经营信息</p>
         <div class="box">
             <table class="business-information">
                 <tbody>
@@ -845,7 +846,7 @@
             </ul>
         </div>
         <!--公共记录-->
-        <p class="title" style="width: 74px;">公共记录</p>
+        <p class="title" style="width: 74px;" id="floor4">公共记录</p>
         <div class="box">
             <div class="clr" style="width: 1120px;">
                 <div class="fl">
@@ -987,7 +988,7 @@
             </ul>
         </div>
         <!--财务状况-->
-        <p class="title" style="width: 74px;">财务状况</p>
+        <p class="title" style="width: 74px;" id="floor5">财务状况</p>
         <div class="box clr">
             <div class="fr" style="margin-right: 37px;">
                 <a href="javascript:;" class="download lbBox">
@@ -1080,7 +1081,7 @@
             </ul>
         </div>
         <!--企业指标-->
-        <p class="title" style="width: 74px;">企业指标</p>
+        <p class="title" style="width: 74px;" id="floor6">企业指标</p>
         <div class="box clr">
             <table class="enterprise" style="margin-top: 30px;">
                 <tbody>
@@ -1269,10 +1270,14 @@
                 </div>
             </div>
         </div>
+        <a class="statement-text" href="/agreement.html">
+            <i class="iconfont iconjinggao1"></i>
+            <span>免责声明</span>
+        </a>
         <!--更多维度-->
         <p class="title" style="width: 79px;margin-top: 40px;">更多维度</p>
         <div class="dimension lbBox">
-            <div class="lineBlock va-m text">
+           <!-- <div class="lineBlock va-m text">
                 <p class="t1">xx国别企业信用报告</p>
                 <p class="t2">获取更多信息，风险早知道，掌握贸易主动权</p>
                 <ul class="list clr">
@@ -1294,9 +1299,9 @@
                     </li>
                 </ul>
                 <a href="javascript:;" class="btn">获取报告</a>
-            </div>
-            <div class="lineBlock va-m pic">
-
+            </div>-->
+            <div class="pic">
+                <img src="./images/banner.jpg" alt="">
             </div>
         </div>
     </div>
@@ -1374,6 +1379,16 @@
 <script type="text/javascript" src="js/common/base.js"></script>
 <script type="text/javascript">
   $(function () {
+
+
+    $(document).on('click', '.bar-right ul li', function (e) {
+      var index = $(this).index();
+      var arr = ['#floor1', '#floor2', '#floor3', '#floor4', '#floor5', '#floor6'];
+
+      $('html,body').animate({scrollTop: $(arr[index]).offset().top}, 800);
+    });
+
+
     $(document).on('click', '.togglebox', function () {
       $(".toggle").toggle();
       if ($(this).hasClass('curr')) {

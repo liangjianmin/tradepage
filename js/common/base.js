@@ -41,7 +41,6 @@
     },
     handleBind: function (opt) {
       
-      
       //登录模块弹窗
       $(document).on('click', '.nav .btn', function () {
         layer.open({
@@ -155,6 +154,17 @@
         if (target.closest(".h-search-box").length != 0) return;
         $('.lately').hide();
       });
+      
+      
+      var from=Util.getRequest('from');
+      
+      if(from == 'index'){
+        $('body,html').animate({
+          scrollTop: 1000
+        }, 500);
+      }
+      
+      
       
       
       return this;

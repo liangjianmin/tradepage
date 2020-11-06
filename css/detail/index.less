@@ -125,7 +125,7 @@ table {
             line-height: 40px;
             transition: all 0.4s ease;
 
-            &:hover,.choice-curr {
+            &:hover, .choice-curr {
               color: #0088dd;
             }
           }
@@ -168,15 +168,11 @@ table {
       .inp-button {
         width: 146px;
         height: 50px;
-        background: rgba(7, 85, 159, 1);
+        background: #FFA214;
         line-height: 50px;
         font-size: 16px;
         color: #ffffff;
         text-align: center;
-
-        &:hover {
-          background: rgba(7, 85, 159, 0.9);
-        }
       }
 
       .txt {
@@ -267,7 +263,7 @@ table {
     }
   }
 
-  .printing{
+  .printing {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -278,11 +274,13 @@ table {
     line-height: 28px;
     text-align: center;
     cursor: pointer;
-    .iconfont{
+
+    .iconfont {
       color: #333333;
       font-size: 12px;
     }
-    span{
+
+    span {
       font-size: 12px;
       color: #333333;
       margin-left: 4px;
@@ -302,10 +300,11 @@ table {
     padding: 25px 0 42px 0;
 
     .bar-right {
-      position: absolute;
-      right: -74px;
-      top: 0;
-
+      position: fixed;
+      right: 50%;
+      margin-right: -663px;
+      top: 237px;
+      z-index: 99999;
       ul {
         width: 56px;
         background: #FFFFFF;
@@ -336,14 +335,40 @@ table {
             padding: 0 4px;
             font-size: 12px;
             color: #ffffff;
+            z-index: 999;
           }
 
           .iconfont {
+            position: relative;
+            z-index: 1;
             font-size: 32px;
             color: #3A3A3A;
           }
 
+          .bg {
+            position: absolute;
+            right: -44px;
+            top: -10px;
+            width: 80px;
+            height: 81px;
+            background: url("../../images/is.png") no-repeat center;
+            background-size: cover;
+          }
+
+
+          &:hover {
+            .iconfont {
+              color: #078bde;
+            }
+
+            p {
+              color: #07559f;
+            }
+          }
+
           p {
+            position: relative;
+            z-index: 1;
             font-size: 12px;
             color: #666666;
             text-align: center;
@@ -433,6 +458,10 @@ table {
       color: #666666;
       margin-bottom: 3px;
       line-height: 26px;
+
+      a {
+        color: #0088dd;
+      }
 
       &.tt-3-mb {
         margin-bottom: 20px;
@@ -938,6 +967,56 @@ table {
           line-height: 38px;
           display: block;
         }
+      }
+
+      .pic {
+        width: 1117px;
+        height: 250px;
+
+        img {
+          width: 1117px;
+          height: 250px;
+        }
+      }
+    }
+
+    .statement-text {
+      margin-top: 10px;
+      margin-left: 35px;
+      text-decoration: underline;
+      display: block;
+      .iconfont {
+        font-size: 17px;
+        color: #333333;
+      }
+
+      span {
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+
+    .tishi{
+      span{
+        font-size: 16px;
+        color: #333333;
+      }
+      em{
+        width: 106px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        background: #F9F9F9;
+        border-radius: 2px;
+        border: 1px solid #DDDDDD;
+        font-size: 12px;
+        color: #333333;
+      }
+      .iconfont{
+        font-size: 16px;
+        color: #ff7835;
+        margin-left: 7px;
+        margin-right: 1px;
       }
     }
   }
