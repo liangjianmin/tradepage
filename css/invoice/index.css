@@ -979,9 +979,10 @@ body {
   margin-bottom: 20px;
 }
 .h-invoice .bar-right .input-box label {
-  width: 81px;
+  width: 137px;
   font-size: 14px;
   color: #333333;
+  text-align: right;
 }
 .h-invoice .bar-right .input-box label em {
   color: #f3632c;
@@ -1023,4 +1024,3 @@ body {
   font-size: 14px;
   color: #827B7B;
 }
-/*# sourceMappingURL=index.css.map */
