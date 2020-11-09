@@ -42,7 +42,7 @@
     handleBind: function (opt) {
       
       //登录模块弹窗
-      $(document).on('click', '.nav .btn', function () {
+      $(document).on('click', '.loginLay', function () {
         layer.open({
           type: 1,
           title: false,

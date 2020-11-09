@@ -1466,6 +1466,7 @@ body {
   color: #333333;
 }
 .h-detail .wrap .business-information {
+  position: relative;
   margin-top: 26px;
   width: 1120px;
 }

@@ -326,29 +326,44 @@
         </div>
         <!--经营信息-->
         <p class="title" style="width: 86px;margin-top: 46px;" id="floor2">经营信息</p>
-        <div class="box">
+        <div class="box" style="position: relative">
+            <a href="buy.html" class="sbg" style="position: absolute;right: 38px;top: 1px;z-index: 9;background: #ffffff;">
+                <img src="./images/company_1.png" alt="" style="display: block;cursor: pointer">
+                <img src="./images/company_2.png" alt="" style="display: block">
+            </a>
             <table class="business-information">
                 <tbody>
                 <tr>
                     <td class="font1">财务日期</td>
                     <td class="font2">2019年1月1日-2019年12月31日</td>
                     <td class="font1">风险诉讼记录</td>
-                    <td class="font2">有</td>
+                    <td class="font2" style="width: 356px">有</td>
                 </tr>
                 <tr>
                     <td class="font1">营业收入</td>
                     <td class="font2">$ 450,000,000.00 (中型企业）</td>
                     <td class="font1">累计利润</td>
-                    <td class="font2">$ 232,222,000.00</td>
+                    <td class="font2" style="width: 356px">$ 232,222,000.00</td>
                 </tr>
                 <tr>
                     <td class="font1">是否进口商</td>
                     <td class="font2">是</td>
                     <td class="font1">当年净利润</td>
-                    <td class="font2">$ 232,222,000.00</td>
+                    <td class="font2" style="width: 356px">$ 232,222,000.00</td>
                 </tr>
                 </tbody>
             </table>
+            <p class="t-b2 lbBox" style="margin-top: 26px;"><em class="lineBlock va-m"></em><span class="va-m">风险提示</span></p>
+            <ul class="risk-statement">
+                <li class="lbBox">
+                    <div class="lineBlock va-m circle"><span class="lineBlock va-m">1</span><b class="lineBlock emptys"></b></div>
+                    <div class="lineBlock va-m text" style="width: 627px">企该企业无披露财务数据，注意企业兑付能力与采购能力。点击使用<a href="buy.html">企业信用报告</a>获取更多内容。</div>
+                </li>
+                <li class="lbBox">
+                    <div class="lineBlock va-m circle"><span class="lineBlock va-m">2</span><b class="lineBlock emptys"></b></div>
+                    <div class="lineBlock va-m text" style="width: 480px">该企业为小（微）企业，注意企业兑付能力与采购能力。</div>
+                </li>
+            </ul>
         </div>
         <!--关联企业（47关联企业）-->
         <p class="title" style="width: 172px;margin-top: 32px;" id="floor3">关联企业（47关联企业）</p>
@@ -411,7 +426,7 @@
                 </table>
             </div>
         </div>
-        <a class="statement-text" href="/agreement.html">
+        <a class="statement-text" href="/agreement.html?type=3">
             <i class="iconfont iconjinggao1"></i>
             <span>免责声明</span>
         </a>
@@ -419,7 +434,9 @@
         <p class="title" style="width: 79px;margin-top: 40px;">更多维度</p>
         <div class="dimension lbBox">
             <div class="pic">
-                <img src="./images/banner.jpg" alt="">
+                <a href="buy.html">
+                    <img src="./images/banner.jpg" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -432,13 +449,13 @@
         <dl class="link mb36 pt45 clr">
             <dt>服务产品</dt>
             <dd>
-                <a href="/search.html">在线搜索企业</a>
+                <a href="/productIntroduction.html">在线搜索企业</a>
             </dd>
             <dd>
-                <a href="/detail.html">风险决策报告</a>
+                 <a href="/productIntroduction.html">风险决策报告</a>
             </dd>
             <dd>
-                <a href="/detail.html">深度信用报告</a>
+                 <a href="/productIntroduction.html">深度信用报告</a>
             </dd>
         </dl>
         <dl class="link mb70 clr">
@@ -447,7 +464,7 @@
                 <a href="/abouts.html">关于我们</a>
             </dd>
             <dd>
-                <a href="/agreement.html">用户协议</a>
+                <a href="/agreement.html?type=0">用户协议</a>
             </dd>
             <dd>
                 <a href="/agreement.html?type=1">隐私权政策</a>
