@@ -840,6 +840,17 @@ body {
   background-size: cover;
   cursor: pointer;
 }
+.fix .ic {
+  position: absolute;
+  right: 0;
+  top: -37px;
+  width: 32px;
+  height: 32px;
+  background: url("../../images/cc.png") no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 22;
+}
 .layui-layer-setwin .layui-layer-close2 {
   right: -17px !important;
   top: -58px !important;
@@ -861,7 +872,8 @@ body {
 .s-banner {
   width: 1920px;
   height: 135px;
-  background: #3488D7;
+  background: url("../../images/sg (1).png") no-repeat center;
+  background-size: cover;
 }
 .s-banner .h-search {
   position: relative;
@@ -982,14 +994,11 @@ body {
 .s-banner .h-search .h-search-box .inp-button {
   width: 146px;
   height: 50px;
-  background: #00af63;
+  background: #FFA214;
   line-height: 50px;
   font-size: 16px;
   color: #ffffff;
   text-align: center;
-}
-.s-banner .h-search .h-search-box .inp-button:hover {
-  background: rgba(0, 175, 99, 0.9);
 }
 .s-banner .h-search .h-search-box .txt {
   position: absolute;
@@ -1065,7 +1074,6 @@ body {
 .s-search {
   position: relative;
   padding-top: 15px;
-  padding-bottom: 15px;
   background: #EEF2F7;
 }
 .s-search .title a {
@@ -1076,7 +1084,6 @@ body {
   color: #999999;
 }
 .s-search .list {
-  margin-top: 15px;
   margin-bottom: 15px;
 }
 .s-search .list li {
@@ -1168,9 +1175,11 @@ body {
   display: block;
 }
 .s-search .bar-text {
-  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 23px;
   text-align: center;
   display: none;
+  background: #ffffff;
 }
 .s-search .bar-text span {
   font-size: 14px;
@@ -1179,12 +1188,6 @@ body {
 .s-search .bar-text em {
   font-size: 14px;
   color: #666666;
-}
-.layui-laypage .layui-laypage-count,
-.layui-laypage .layui-laypage-limits,
-.layui-laypage .layui-laypage-refresh,
-.layui-laypage .layui-laypage-skip {
-  background: #EEF2F7;
 }
 .layui-laypage input:focus,
 .layui-laypage select:focus {

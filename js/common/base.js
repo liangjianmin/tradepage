@@ -55,9 +55,13 @@
             
           }
         });
-        
-        
       });
+      
+      $(document).on('click', '.ic', function (e) {
+        $(".fix").slideUp();
+        return false;
+      });
+      
       
       $(document).on('click', '.login-layer .tab li', function () {
         var index = $(this).index();
@@ -156,15 +160,13 @@
       });
       
       
-      var from=Util.getRequest('from');
+      var from = Util.getRequest('from');
       
-      if(from == 'index'){
+      if (from == 'index') {
         $('body,html').animate({
           scrollTop: 1000
         }, 500);
       }
-      
-      
       
       
       return this;

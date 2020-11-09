@@ -15,7 +15,8 @@ html, body {
 .s-banner {
   width: 1920px;
   height: 135px;
-  background: #3488D7;
+  background: url("../../images/sg (1).png") no-repeat center;
+  background-size: cover;
 
   .h-search {
     position: relative;
@@ -156,15 +157,11 @@ html, body {
       .inp-button {
         width: 146px;
         height: 50px;
-        background: rgba(0, 175, 99, 1);
+        background: #FFA214;
         line-height: 50px;
         font-size: 16px;
         color: #ffffff;
         text-align: center;
-
-        &:hover {
-          background: rgba(0, 175, 99, 0.9);
-        }
       }
 
       .txt {
@@ -259,7 +256,6 @@ html, body {
 .s-search {
   position: relative;
   padding-top: 15px;
-  padding-bottom: 15px;
   background: #EEF2F7;
 
   .title {
@@ -274,7 +270,6 @@ html, body {
   }
 
   .list {
-    margin-top: 15px;
     margin-bottom: 15px;
 
     li {
@@ -380,9 +375,11 @@ html, body {
   }
 
   .bar-text {
-    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 23px;
     text-align: center;
     display: none;
+    background: #ffffff;
 
     span {
       font-size: 14px;
@@ -396,9 +393,7 @@ html, body {
   }
 }
 
-.layui-laypage .layui-laypage-count, .layui-laypage .layui-laypage-limits, .layui-laypage .layui-laypage-refresh, .layui-laypage .layui-laypage-skip {
-  background: #EEF2F7;
-}
+
 
 .layui-laypage input:focus, .layui-laypage select:focus {
   border-color: #0088DD !important;

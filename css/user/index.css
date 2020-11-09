@@ -840,6 +840,17 @@ body {
   background-size: cover;
   cursor: pointer;
 }
+.fix .ic {
+  position: absolute;
+  right: 0;
+  top: -37px;
+  width: 32px;
+  height: 32px;
+  background: url("../../images/cc.png") no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 22;
+}
 .layui-layer-setwin .layui-layer-close2 {
   right: -17px !important;
   top: -58px !important;
