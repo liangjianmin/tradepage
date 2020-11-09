@@ -1073,6 +1073,7 @@ body {
   width: 304px;
 }
 .h-user .bar-right .section .section-r .title {
+  padding-left: 15px;
   font-size: 16px;
   color: #333333;
   font-weight: bold;
@@ -1080,6 +1081,9 @@ body {
 }
 .h-user .bar-right .section .section-r .title.mt {
   margin-top: 15px;
+}
+.h-user .bar-right .section .section-r .list {
+  padding-left: 15px;
 }
 .h-user .bar-right .section .section-r .list li a {
   font-size: 14px;

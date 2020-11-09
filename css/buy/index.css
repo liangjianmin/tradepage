@@ -1220,4 +1220,8 @@ body {
 .layui-form-radioed > i {
   color: #0088dd !important;
 }
+.layui-form-checked[lay-skin=primary] i {
+  border-color: #0088DD !important;
+  background-color: #0088DD !important;
+}
 /*# sourceMappingURL=index.css.map */

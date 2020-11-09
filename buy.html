@@ -68,23 +68,23 @@
                             <a class="fr r" href="detail.html">查看样例</a>
                         </div>
                         <ul class="lbBox list clr">
-                            <li>基础信息</li>
+                            <li>基本信息</li>
                             <li>变更记录</li>
                             <li>股东信息</li>
                             <li>管理层信息</li>
                             <li>关联企业</li>
                             <li>经营信息</li>
-                            <li>付款行为</li>
+                            <li>付款逾期信息</li>
                             <li>财务状况</li>
-                            <li>公共记录详情</li>
-                            <li>企业风险指标分析</li>
+                            <li>风险诉讼信息</li>
+                            <li>风险指标分析</li>
                             <li>企业新闻记录</li>
                             <li>竞争对手信息</li>
                             <li>监管机构信息</li>
                         </ul>
                         <div class="price layui-form">
-                            <input type="radio" name="price" class="va-m">
-                            <span class="num va-m">¥850</span>
+                            <input type="radio" name="price" class="va-m" lay-filter="price" value="0">
+                            <span class="num va-m">¥899</span>
                         </div>
                         <div class="bottom lbBox">
                             <i class="iconfont icontishibeifen2 va-t"></i>
@@ -94,27 +94,27 @@
                     </div>
                 </div>
                 <div class="lineBlock report va-m">
-                    <p class="tit2">深度信用报告</p>
+                    <p class="tit2">风险决策报告</p>
                     <div class="text">
-                        <p class="text1">立即获取”LAVA INTERNATION LIMITED“ <em>最新的</em>企业信息，支付后 <em>等待5-10工作日</em>即获取。</p>
+                        <p class="text1">立即获取”LAVA INTERNATION LIMITED“企业信息，支付后 <em>立即获取。</em></p>
                         <div class="text2 clr">
                             <span class="fl l">内容包括：</span>
                             <a class="fr r" href="detailRisk.html">查看样例</a>
                         </div>
                         <ul class="lbBox list clr">
-                            <li>注册信息</li>
+                            <li>基本信息</li>
                             <li>管理层信息</li>
                             <li>关联企业</li>
                             <li>经营信息</li>
                             <li>财务状况</li>
-                            <li>公共记录简述</li>
+                            <li>风险诉讼信息</li>
                             <li>竞争对手信息</li>
                             <li>监管机构信息</li>
                         </ul>
                         <div class="txb">该数据更新日期为“2018年1月1日”,且无法获取具体公共事件。如希望获取最新数据及完整事件记录请使用<em>深度信用报告</em>报告。</div>
                         <div class="price layui-form">
-                            <input type="radio" name="price" class="va-m" checked>
-                            <span class="num va-m">¥850</span>
+                            <input type="radio" name="price" class="va-m" checked lay-filter="price" value="1">
+                            <span class="num va-m">¥399</span>
                         </div>
                         <div class="bottom lbBox">
                             <i class="iconfont icontishibeifen2 va-t"></i>
@@ -154,12 +154,12 @@
                 <div class="fr r clr">
                     <p class="t1 lbBox">
                         <span>应付总额：</span>
-                        <em>850</em>
+                        <em id="price">399</em>
                         <b>元</b>
                     </p>
                     <p class="t2">发票：订单完成后为您开发票。</p>
                     <div class="read lbBox">
-                        <input type="checkbox" class="va-m"/>
+                        <input type="checkbox" name="" title="" lay-skin="primary" >
                         <a class="va-m" href="agreement.html">已阅读并同意《用户协议》《隐私权政策》《版权声明》《免责声明》</a>
                     </div>
                     <div class="read-text">请详细阅读各条例之后选择打勾</div>
@@ -180,10 +180,10 @@
                 <a href="/productIntroduction.html">在线搜索企业</a>
             </dd>
             <dd>
-                 <a href="/productIntroduction.html">风险决策报告</a>
+                <a href="/productIntroduction.html">风险决策报告</a>
             </dd>
             <dd>
-                 <a href="/productIntroduction.html">深度信用报告</a>
+                <a href="/productIntroduction.html">深度信用报告</a>
             </dd>
         </dl>
         <dl class="link mb70 clr">
@@ -243,6 +243,17 @@
 <script type="text/javascript">
   $(function () {
 
+    layui.form.on('radio(price)', function (data) {
+
+
+      if (data.value == '0') {
+        $("#price").text('899');
+      } else {
+        $("#price").text('399');
+      }
+
+
+    });
 
   })
 </script>
