@@ -877,9 +877,22 @@ body {
 }
 .h-agrement .section {
   width: 1190px;
-  min-height: 631px;
+  height: 570px;
+  overflow-y: auto;
   background: #ffffff;
   padding: 30px 30px 30px 38px;
+  display: none;
+}
+.h-agrement .section::-webkit-scrollbar {
+  width: 18px;
+}
+.h-agrement .section::-webkit-scrollbar-thumb {
+  background: #D8D8D8;
+  border-radius: 8px;
+}
+.h-agrement .section::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #F2F5F7;
 }
 .h-agrement .section p {
   color: #666666;

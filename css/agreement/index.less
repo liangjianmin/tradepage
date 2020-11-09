@@ -34,12 +34,30 @@
     }
   }
 
-  .section{
+  .section {
     width: 1190px;
-    min-height: 631px;
+    height: 570px;
+    overflow-y: auto;
     background: #ffffff;
     padding: 30px 30px 30px 38px;
-    p{
+    display: none;
+
+    &::-webkit-scrollbar {
+      width: 18px;
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #D8D8D8;
+      border-radius:8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 0;
+      background: #F2F5F7;
+    }
+
+    p {
       color: #666666;
       line-height: 30px;
       text-align: justify;

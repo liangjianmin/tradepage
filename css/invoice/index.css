@@ -999,8 +999,14 @@ body {
 .h-invoice .bar-right .input-box input::-webkit-input-placeholder {
   color: #bbbbbb;
 }
+.h-invoice .bar-right .input-box .rx {
+  font-size: 12px;
+  color: #666666;
+  margin-left: 140px;
+  margin-top: 16px;
+}
 .h-invoice .bar-right .btn {
-  margin-left: 85px;
+  margin-left: 143px;
   margin-top: 30px;
 }
 .h-invoice .bar-right .btn .btn1 {
@@ -1024,3 +1030,4 @@ body {
   font-size: 14px;
   color: #827B7B;
 }
+/*# sourceMappingURL=index.css.map */
