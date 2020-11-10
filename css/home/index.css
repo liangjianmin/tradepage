@@ -908,6 +908,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   display: none;
+  box-shadow: -1px 2px 13px 4px rgba(187, 192, 195, 0.21);
 }
 .h-section .h-search .choice .h-search-area .inp {
   margin-top: 13px;

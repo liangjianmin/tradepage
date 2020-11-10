@@ -1045,6 +1045,7 @@ body {
   font-size: 16px;
   color: #0088dd;
   margin-left: 5px;
+  cursor: pointer;
 }
 .h-user .bar-right .list .box li .show {
   width: 893px;
@@ -1052,14 +1053,19 @@ body {
   margin-left: 5px;
   padding: 10px 0 20px 10px;
   margin-bottom: 5px;
+  display: none;
 }
 .h-user .bar-right .list .box li .show .t1 {
   font-size: 14px;
   color: #333333;
 }
+.h-user .bar-right .list .box li .show .t1 em {
+  text-decoration: line-through;
+}
 .h-user .bar-right .list .box li .show .t2 {
   margin-top: 10px;
   font-size: 14px;
   color: #0088dd;
+  padding-left: 22px;
 }
 /*# sourceMappingURL=index.css.map */

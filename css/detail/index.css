@@ -917,6 +917,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   display: none;
+  box-shadow: -1px 2px 13px 4px rgba(187, 192, 195, 0.21);
 }
 .s-search .h-search .choice .h-search-area .inp {
   margin-top: 13px;
@@ -1108,8 +1109,9 @@ body {
   position: fixed;
   right: 50%;
   margin-right: -663px;
-  top: 237px;
+  top: 50%;
   z-index: 99999;
+  margin-top: -274px;
 }
 .h-detail .wrap .bar-right ul {
   width: 56px;
@@ -1150,17 +1152,19 @@ body {
 }
 .h-detail .wrap .bar-right ul li .bg {
   position: absolute;
-  right: -44px;
+  right: -34px;
   top: -10px;
   width: 80px;
   height: 81px;
   background: url("../../images/is.png") no-repeat center;
   background-size: cover;
 }
-.h-detail .wrap .bar-right ul li:hover .iconfont {
+.h-detail .wrap .bar-right ul li:hover .iconfont,
+.h-detail .wrap .bar-right ul li.curr .iconfont {
   color: #078bde;
 }
-.h-detail .wrap .bar-right ul li:hover p {
+.h-detail .wrap .bar-right ul li:hover p,
+.h-detail .wrap .bar-right ul li.curr p {
   color: #07559f;
 }
 .h-detail .wrap .bar-right ul li p {
@@ -1751,6 +1755,47 @@ body {
   font-size: 16px;
   color: #0088DD;
   margin: 46px auto 0;
+  display: block;
+}
+.tourist {
+  position: relative;
+  width: 1190px;
+  height: 758px;
+  background: url("../../images/xs.jpg") #ffffff no-repeat center;
+  background-size: cover;
+}
+.tourist .tourist-bg {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  width: 921px;
+  height: 724px;
+  margin: 0 auto;
+  background: url("../../images/2dd.jpg") #ffffff no-repeat center;
+  background-size: contain;
+}
+.tourist .tourist-bg .t1 {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: block;
+  color: #132b3a;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.tourist .tourist-bg .t2 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 816px;
+  height: 110px;
+  margin: 0 auto;
+  background: url("../../images/gh.jpg") #ffffff no-repeat center;
+  background-size: contain;
   display: block;
 }
 /*# sourceMappingURL=index.css.map */

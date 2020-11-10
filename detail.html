@@ -1532,6 +1532,54 @@
     });
 
 
+    $(window).scroll(function () {
+      screeningScroll();
+    });
+
+
+    function screeningScroll() {
+      var top = $(document).scrollTop();
+      var arr = ['#floor1', '#floor2', '#floor3', '#floor4', '#floor5', '#floor6'];
+
+
+      var offSetArr = [];
+      for (var i = 0; i < arr.length; i++) {
+        var floorHeight = $(arr[i]).offset().top;
+        offSetArr.push(floorHeight)
+      }
+
+      $(".bar-right ul li").removeClass('curr');
+
+
+      if (top <= offSetArr[0]) {
+
+        $(".bar-right ul li").eq(0).addClass('curr');
+
+      } else if (top > offSetArr[0] && top <= offSetArr[1]) {
+
+        $(".bar-right ul li").eq(1).addClass('curr');
+
+      } else if (top > offSetArr[1] && top <= offSetArr[2]) {
+
+        $(".bar-right ul li").eq(2).addClass('curr');
+
+      } else if (top > offSetArr[2] && top <= offSetArr[3]) {
+
+        $(".bar-right ul li").eq(3).addClass('curr');
+
+      } else if (top > offSetArr[3] && top <= offSetArr[4]) {
+
+        $(".bar-right ul li").eq(4).addClass('curr');
+
+      }else {
+
+        $(".bar-right ul li").eq(5).addClass('curr');
+
+      }
+
+    }
+
+
     $(document).on('click', '.bar-right ul li', function (e) {
       var index = $(this).index();
       var arr = ['#floor1', '#floor2', '#floor3', '#floor4', '#floor5', '#floor6'];

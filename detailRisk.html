@@ -212,12 +212,12 @@
                     <b class="bg"></b>
                 </li>
                 <li>
-                    <i class="iconfont icongaoguanxinxi"></i>
-                    <p>管理层</p>
-                </li>
-                <li>
                     <i class="iconfont icondengji1"></i>
                     <p>风险诉讼</p>
+                </li>
+                <li>
+                    <i class="iconfont icongaoguanxinxi"></i>
+                    <p>管理层</p>
                 </li>
                 <li>
                     <i class="iconfont iconbianzu3"></i>
@@ -412,7 +412,7 @@
             </table>
         </div>
         <!--风险诉讼信息-->
-        <p class="title" style="width: 100px;margin-top: 28px;" id="floor5">风险诉讼信息</p>
+        <p class="title" style="width: 100px;margin-top: 28px;" id="floor4">风险诉讼信息</p>
         <div class="box">
             <p class="tishi lbBox" style="margin-top: 30px;" id="riskTip">
                 <span class="va-m">风险信息</span>
@@ -473,7 +473,7 @@
             </ul>
         </div>
         <!--管理者-->
-        <p class="title" style="width: 127px;margin-top: 37px;" id="floor4">管理层（2管理层）</p>
+        <p class="title" style="width: 127px;margin-top: 37px;" id="floor5">管理层（2管理层）</p>
         <div class="box clr">
             <div class="fl">
                 <table class="controller">
@@ -845,58 +845,106 @@
 <script type="text/javascript">
   $(function () {
 
-    $(document).on('click', '#riskTip', function (e) {
-      layer.open({
-        type: 1,
-        title: false,
-        area: ['642px', 'auto'],
-        closeBtn: 0,
-        shadeClose: true,
-        move: false,
-        content: $("#riskHtml").html(),
-        success: function (layero, index) {
-        }
+      $(document).on('click', '#riskTip', function (e) {
+        layer.open({
+          type: 1,
+          title: false,
+          area: ['642px', 'auto'],
+          closeBtn: 0,
+          shadeClose: true,
+          move: false,
+          content: $("#riskHtml").html(),
+          success: function (layero, index) {
+          }
+        });
       });
-    });
 
-    $(document).on('click', '.hideclose', function (e) {
-      layer.closeAll();
-    });
-
-    $(document).on('click', '#informationTip', function (e) {
-      layer.open({
-        type: 1,
-        title: false,
-        area: ['642px', 'auto'],
-        closeBtn: 0,
-        shadeClose: true,
-        move: false,
-        content: $("#informationHtml").html(),
-        success: function (layero, index) {
-        }
+      $(document).on('click', '.hideclose', function (e) {
+        layer.closeAll();
       });
-    });
+
+      $(document).on('click', '#informationTip', function (e) {
+        layer.open({
+          type: 1,
+          title: false,
+          area: ['642px', 'auto'],
+          closeBtn: 0,
+          shadeClose: true,
+          move: false,
+          content: $("#informationHtml").html(),
+          success: function (layero, index) {
+          }
+        });
+      });
 
 
-    $(document).on('click', '.bar-right ul li', function (e) {
-      var index = $(this).index();
-      var arr = ['#floor1', '#floor2', '#floor3', '#floor4', '#floor5', '#floor6'];
+      $(document).on('click', '.bar-right ul li', function (e) {
+        var index = $(this).index();
+        var arr = ['#floor1', '#floor2', '#floor3', '#floor4', '#floor5', '#floor6'];
 
-      $('html,body').animate({scrollTop: $(arr[index]).offset().top}, 800);
-    });
+        $('html,body').animate({scrollTop: $(arr[index]).offset().top}, 800);
+      });
 
 
-    $(document).on('click', '.togglebox', function () {
-      $(".toggle").toggle();
-      if ($(this).hasClass('curr')) {
-        $(this).text('展开');
-        $(this).removeClass('curr');
-      } else {
-        $(this).text('收起');
-        $(this).addClass('curr');
+      $(window).scroll(function () {
+        screeningScroll();
+      });
+
+
+      function screeningScroll() {
+        var top = $(document).scrollTop();
+        var arr = ['#floor1', '#floor2', '#floor3', '#floor4', '#floor5', '#floor6'];
+
+
+        var offSetArr = [];
+        for (var i = 0; i < arr.length; i++) {
+          var floorHeight = $(arr[i]).offset().top;
+          offSetArr.push(floorHeight)
+        }
+
+        $(".bar-right ul li").removeClass('curr');
+
+
+        if (top <= offSetArr[0]) {
+
+          $(".bar-right ul li").eq(0).addClass('curr');
+
+        } else if (top > offSetArr[0] && top <= offSetArr[1]) {
+
+          $(".bar-right ul li").eq(1).addClass('curr');
+
+        } else if (top > offSetArr[1] && top <= offSetArr[2]) {
+
+          $(".bar-right ul li").eq(2).addClass('curr');
+
+        } else if (top > offSetArr[2] && top <= offSetArr[3]) {
+
+          $(".bar-right ul li").eq(3).addClass('curr');
+
+        } else if (top > offSetArr[3] && top <= offSetArr[4]) {
+
+          $(".bar-right ul li").eq(4).addClass('curr');
+
+        }else {
+
+          $(".bar-right ul li").eq(5).addClass('curr');
+
+        }
+
       }
-    });
-  })
+
+      $(document).on('click', '.togglebox', function () {
+        $(".toggle").toggle();
+        if ($(this).hasClass('curr')) {
+          $(this).text('展开');
+          $(this).removeClass('curr');
+        } else {
+          $(this).text('收起');
+          $(this).addClass('curr');
+        }
+      });
+    }
+  )
 </script>
 </body>
 

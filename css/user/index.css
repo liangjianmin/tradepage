@@ -1036,25 +1036,26 @@ body {
   color: #0088dd;
 }
 .h-user .bar-right .section .section-l .list li {
+  position: relative;
   width: 597px;
-  padding: 18px 0;
+  padding: 18px 0 0 0;
   background: #FAFAFA;
   border: 1px solid #EDEDED;
   margin-bottom: 15px;
 }
-.h-user .bar-right .section .section-l .list li .iconfont {
+.h-user .bar-right .section .section-l .list li i.iconfont {
   margin-left: 22px;
   font-size: 20px;
   color: #000000;
 }
-.h-user .bar-right .section .section-l .list li .iconfont.curr {
+.h-user .bar-right .section .section-l .list li i.iconfont.curr {
   color: #d2cece;
 }
 .h-user .bar-right .section .section-l .list li .text {
   margin-left: 16px;
 }
 .h-user .bar-right .section .section-l .list li .text .t1 {
-  width: 524px;
+  width: 450px;
   font-size: 14px;
   color: #333333;
   overflow: hidden;
@@ -1065,9 +1066,39 @@ body {
   color: #f3632c;
 }
 .h-user .bar-right .section .section-l .list li .text .t2 {
-  margin-top: 18px;
+  margin-top: 15px;
   font-size: 14px;
   color: #666666;
+  padding-bottom: 15px;
+}
+.h-user .bar-right .section .section-l .list li .iconxiangshang {
+  font-size: 16px;
+  color: #0088dd;
+  position: absolute;
+  right: 26px;
+  top: 20px;
+  cursor: pointer;
+}
+.h-user .bar-right .section .section-l .list li .show {
+  width: 579px;
+  background: #ffffff;
+  margin-left: 5px;
+  padding: 10px 0 20px 10px;
+  margin-bottom: 5px;
+  display: none;
+}
+.h-user .bar-right .section .section-l .list li .show .t1 {
+  font-size: 14px;
+  color: #333333;
+}
+.h-user .bar-right .section .section-l .list li .show .t1 em {
+  text-decoration: line-through;
+}
+.h-user .bar-right .section .section-l .list li .show .t2 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #0088dd;
+  padding-left: 22px;
 }
 .h-user .bar-right .section .section-r {
   width: 304px;
