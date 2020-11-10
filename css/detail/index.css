@@ -1158,6 +1158,7 @@ body {
   height: 81px;
   background: url("../../images/is.png") no-repeat center;
   background-size: cover;
+  display: none;
 }
 .h-detail .wrap .bar-right ul li:hover .iconfont,
 .h-detail .wrap .bar-right ul li.curr .iconfont {
@@ -1166,6 +1167,9 @@ body {
 .h-detail .wrap .bar-right ul li:hover p,
 .h-detail .wrap .bar-right ul li.curr p {
   color: #07559f;
+}
+.h-detail .wrap .bar-right ul li.curr .bg {
+  display: block;
 }
 .h-detail .wrap .bar-right ul li p {
   position: relative;

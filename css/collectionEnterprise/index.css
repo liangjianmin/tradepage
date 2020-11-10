@@ -1041,4 +1041,43 @@ body {
   color: #666666;
   text-decoration: underline;
 }
+.h-user .bar-right .list .box li .canel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 920px;
+  height: 102px;
+  background: rgba(74, 73, 73, 0.93);
+  z-index: 1;
+  display: none;
+}
+.h-user .bar-right .list .box li .canel .canel-t1 {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 22px;
+  margin-bottom: 15px;
+}
+.h-user .bar-right .list .box li .canel .ok-btn {
+  width: 72px;
+  height: 26px;
+  background: #0088DD;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 26px;
+  margin-right: 29px;
+}
+.h-user .bar-right .list .box li .canel .cael-btn {
+  width: 70px;
+  height: 24px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #0088DD;
+  text-align: center;
+  line-height: 24px;
+  font-size: 12px;
+  color: #0088dd;
+}
 /*# sourceMappingURL=index.css.map */

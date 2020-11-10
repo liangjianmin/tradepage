@@ -145,6 +145,13 @@
             <div class="list">
                 <ul class="box">
                     <li>
+                        <div class="canel">
+                            <p class="canel-t1">确定取消收藏xxxx ?</p>
+                            <div class="lbBox" style="text-align: center">
+                                <a href="javascript:;" class="ok-btn lineBlock">确定</a>
+                                <a href="javascript:;" class="cael-btn lineBlock">取消</a>
+                            </div>
+                        </div>
                         <p class="t1">LAVA INTERNATIONAL LIMITED（印度）</p>
                         <p class="t2">注册编号：ABCD12345678</p>
                         <p class="t2">企业经营地址：C-7/227, Second Floor Sector-7, Rohini Delhi DL 110085 IN,India</p>
@@ -152,6 +159,13 @@
                         <a href="allOrder.html" class="btn">查看已有报告</a>
                     </li>
                     <li>
+                        <div class="canel">
+                            <p class="canel-t1">确定取消收藏xxxx ?</p>
+                            <div class="lbBox" style="text-align: center">
+                                <a href="javascript:;" class="ok-btn lineBlock">确定</a>
+                                <a href="javascript:;" class="cael-btn lineBlock">取消</a>
+                            </div>
+                        </div>
                         <p class="t1">LAVA INTERNATIONAL LIMITED（印度）</p>
                         <p class="t2">注册编号：ABCD12345678</p>
                         <p class="t2">企业经营地址：C-7/227, Second Floor Sector-7, Rohini Delhi DL 110085 IN,India</p>
@@ -159,6 +173,13 @@
                         <a href="buy.html" class="btn">查看企业信用报告</a>
                     </li>
                     <li>
+                        <div class="canel">
+                            <p class="canel-t1">确定取消收藏xxxx ?</p>
+                            <div class="lbBox" style="text-align: center">
+                                <a href="javascript:;" class="ok-btn lineBlock">确定</a>
+                                <a href="javascript:;" class="cael-btn lineBlock">取消</a>
+                            </div>
+                        </div>
                         <p class="t1">LAVA INTERNATIONAL LIMITED（印度）</p>
                         <p class="t2">注册编号：ABCD12345678</p>
                         <p class="t2">企业经营地址：C-7/227, Second Floor Sector-7, Rohini Delhi DL 110085 IN,India</p>
@@ -166,6 +187,13 @@
                         <a href="allOrder.html" class="btn">查看已有报告</a>
                     </li>
                     <li>
+                        <div class="canel">
+                            <p class="canel-t1">确定取消收藏xxxx ?</p>
+                            <div class="lbBox" style="text-align: center">
+                                <a href="javascript:;" class="ok-btn lineBlock">确定</a>
+                                <a href="javascript:;" class="cael-btn lineBlock">取消</a>
+                            </div>
+                        </div>
                         <p class="t1">LAVA INTERNATIONAL LIMITED（印度）</p>
                         <p class="t2">注册编号：ABCD12345678</p>
                         <p class="t2">企业经营地址：C-7/227, Second Floor Sector-7, Rohini Delhi DL 110085 IN,India</p>
@@ -189,10 +217,10 @@
                 <a href="/productIntroduction.html">在线搜索企业</a>
             </dd>
             <dd>
-                 <a href="/productIntroduction.html">风险决策报告</a>
+                <a href="/productIntroduction.html">风险决策报告</a>
             </dd>
             <dd>
-                 <a href="/productIntroduction.html">深度信用报告</a>
+                <a href="/productIntroduction.html">深度信用报告</a>
             </dd>
         </dl>
         <dl class="link mb70 clr">
@@ -252,13 +280,17 @@
 <script type="text/javascript">
   $(function () {
 
-    $(document).on('click','.delete',function () {
-      layer.msg('确定取消收藏', {
-        time: 20000,
-        btn: ['确定', '取消']
-      });
+    $(document).on('click', '.delete', function () {
+      $(this).parent().find('.canel').show();
     });
 
+    $(document).on('click', '.ok-btn', function () {
+      $(this).parent().parent().hide();
+    });
+
+    $(document).on('click', '.cael-btn', function () {
+      $(this).parent().parent().hide();
+    });
 
     layui.laypage.render({
       elem: 'pagination',
