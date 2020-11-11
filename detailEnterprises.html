@@ -328,7 +328,7 @@
             </ul>
         </div>
 
-        <div class="tourist">
+        <div class="tourist" id="floor2">
             <div class="tourist-bg">
                 <a class="t1" href="detailEnterprise.html">查看样例</a>
                 <a class="t2 loginLay" href="javascript:;"></a>
@@ -616,6 +616,38 @@
       $('html,body').animate({scrollTop: $(arr[index]).offset().top}, 800);
     });
 
+
+    $(window).scroll(function () {
+      screeningScroll();
+    });
+
+
+    function screeningScroll() {
+      var top = $(document).scrollTop();
+      var arr = ['#floor1', '#floor2'];
+
+
+      var offSetArr = [];
+      for (var i = 0; i < arr.length; i++) {
+        var floorHeight = $(arr[i]).offset().top;
+        offSetArr.push(floorHeight)
+      }
+
+      $(".bar-right ul li").removeClass('curr');
+
+
+      if (top <= offSetArr[0]) {
+        $(".bar-right ul li").eq(0).addClass('curr');
+      } else if (top > offSetArr[0] && top <= offSetArr[1]) {
+
+        $(".bar-right ul li").eq(1).addClass('curr');
+
+      } else{
+        $(".bar-right ul li").eq(1).addClass('curr');
+
+      }
+
+    }
 
 
     $(document).on('click', '.togglebox', function () {
