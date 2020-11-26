@@ -1089,7 +1089,7 @@ body {
 .s-search .list li {
   position: relative;
   height: 130px;
-  padding: 20px 70px 30px 80px;
+  padding: 10px 70px 10px 80px;
   background: #FFFFFF;
   margin-bottom: 15px;
   transition: all 0.4s ease;
