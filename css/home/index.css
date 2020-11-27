@@ -1197,6 +1197,7 @@ body {
   width: 290px;
 }
 .h-content .h-content-wrap .r .box1 {
+  position: relative;
   width: 290px;
   background: #ffffff;
   padding-top: 10px;
@@ -1204,11 +1205,20 @@ body {
 }
 .h-content .h-content-wrap .r .box1 .bg {
   width: 282px;
-  height: 484px;
+  height: 514px;
   background: #FFFFFF;
   background: url("../../images/r1.jpg") no-repeat center;
   background-size: cover;
   margin: 0 auto;
+}
+.h-content .h-content-wrap .r .box1 .linkbox {
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 279px;
+  height: 30px;
 }
 .h-content .h-content-wrap .r .box2 {
   margin-top: 25px;
